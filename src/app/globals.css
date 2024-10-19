@@ -14,13 +14,16 @@
     @apply leading-relaxed md:text-sm text-xs;
   }
   h1 {
-    @apply text-stone-100 text-8xl md:text-9xl font-bold;
+    @apply text-stone-100 text-6xl md:text-8xl font-bold;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
   h3 {
     @apply text-stone-200 text-xl md:text-2xl font-medium;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
   h4 {
     @apply text-stone-200 text-base md:text-lg font-medium;
