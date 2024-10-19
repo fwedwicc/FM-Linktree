@@ -4,9 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-neutral-100;
+    @apply bg-stone-950 text-stone-300;
   }
   h1 {
-    @apply text-neutral-800 text-2xl font-medium;
+    @apply text-stone-100 text-8xl md:text-9xl font-bold;
+  }
+  h3 {
+    @apply text-stone-300 text-xl md:text-2xl font-medium;
   }
 }
