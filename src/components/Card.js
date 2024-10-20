@@ -1,13 +1,13 @@
 'use client'
 
-export function Card({ title, user }) {
+export function Card(props) {
 
   return (
-    <div
-      className="border p-2"
+    <a href={props.link} target="_blank" rel="noopener noreferrer"
+      className="border-2 border-neutral-800 px-5 py-4 bg-white rounded-xl text-neutral-800"
     >
-      <h2>{title}</h2>
-      <p>{user}</p>
-    </div>
+      <h2>{props.title}</h2>
+      <p>{props.user}</p>
+    </a>
   );
 }

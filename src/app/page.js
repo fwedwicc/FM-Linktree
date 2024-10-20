@@ -8,10 +8,10 @@ export default function Home() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1 gap-2">
+    <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[80vh]">
-        <div className='flex flex-col h-full justify-between bg-neutral-900 border border-stone-950 rounded-3xl p-6'>
+        <div className='flex flex-col h-full justify-between bg-neutral-900 border border-neutral-950 rounded-3xl p-6'>
           {/* Header */}
           <a href=''>
             <Image
@@ -23,10 +23,10 @@ export default function Home() {
           {/* Middle  Content */}
           <div className="space-y-6">
             <h1>FM Linktree</h1>
-            <div className="border-y border-dashed border-stone-800 py-4 space-y-6">
+            <div className="border-y border-dashed border-neutral-800 py-4 space-y-6">
               <div className='flex items-start gap-3'>
                 <Image
-                  className="mt-2 size-8 border-2 ring-2 ring-indigo-500 border-stone-950 rounded-full"
+                  className="mt-2 size-8 border-2 ring-2 ring-indigo-500 border-neutral-950 rounded-full"
                   src={FrederickMoreno}
                   alt="Frederick Moreno"
                 />
@@ -59,7 +59,7 @@ export default function Home() {
           <h3>Professions</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.profession.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} />
             ))}
           </div>
         </div>
@@ -67,7 +67,23 @@ export default function Home() {
           <h3>Live Sites</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.sites.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} />
+            ))}
+          </div>
+        </div>
+        <div className="space-y-2">
+          <h3>Courses</h3>
+          <div className="grid grid-cols-3 gap-5">
+            {Links.courses.map((card, index) => (
+              <Card key={index} title={card.title} user={card.user} link={card.link} />
+            ))}
+          </div>
+        </div>
+        <div className="space-y-2">
+          <h3>Socials</h3>
+          <div className="grid grid-cols-3 gap-5">
+            {Links.socials.map((card, index) => (
+              <Card key={index} title={card.title} user={card.user} link={card.link} />
             ))}
           </div>
         </div>
