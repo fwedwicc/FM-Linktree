@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[80vh]">
-        <div className='flex flex-col h-full justify-between bg-neutral-900 border border-neutral-950 rounded-3xl p-6'>
+        <div className='flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl p-6'>
           {/* Header */}
           <a href=''>
             <Image
