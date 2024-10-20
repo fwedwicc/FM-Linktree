@@ -13,7 +13,7 @@ export default function Home() {
       <div className="p-3 lg:h-screen h-[80vh]">
         <div className='flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl p-6'>
           {/* Header */}
-          <a href=''>
+          <a href='https://fwedwicc.github.io/FM-Portfolio/'>
             <Image
               className="w-6 h-auto"
               src={FMLogo}
@@ -54,8 +54,8 @@ export default function Home() {
         </div>
       </div>
       {/* Links Section */}
-      <div className="p-8 space-y-8 md:h-screen h-auto overflow-auto">
-        <div className="space-y-2">
+      <div className="p-8 space-y-8 md:h-screen h-auto overflow-auto custom-scrollbar">
+        <div className="space-y-3">
           <h3>Professions</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.profession.map((card, index) => (
@@ -63,7 +63,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <h3>Live Sites</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.sites.map((card, index) => (
@@ -71,7 +71,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <h3>Courses</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.courses.map((card, index) => (
@@ -79,7 +79,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <h3>Socials</h3>
           <div className="grid grid-cols-3 gap-5">
             {Links.socials.map((card, index) => (
