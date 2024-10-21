@@ -1,7 +1,9 @@
 'use client'
 import Image from 'next/image';
 import { FMLogo, FrederickMoreno } from '@/assets';
+import { Cursor } from "@/components/Cursor";
 import { Card } from "@/components/Card";
+import { Ball } from "@/components/Ball";
 import { Links } from "@/constants/data";
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
+      <Cursor />
+      <Ball />
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[70vh]">
         <div className='relative flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl rounded-tr-[6.3rem] p-6'>
