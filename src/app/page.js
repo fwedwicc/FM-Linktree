@@ -55,38 +55,20 @@ export default function Home() {
       </div>
       {/* Links Section */}
       <div className="md:p-8 p-5 md:space-y-8 space-y-6 md:h-screen h-auto overflow-auto custom-scrollbar">
-        <div className="space-y-3">
-          <h3>Professions</h3>
-          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
-            {Links.profession.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
-            ))}
+        {[
+          { title: "Professions / Socials", data: Links.profession },
+          { title: "Live Sites", data: Links.sites },
+          { title: "Other Profiles", data: Links.courses },
+        ].map((links, index) => (
+          <div className="space-y-2" key={index}>
+            <h3>{links.title}</h3>
+            <div className="grid md:grid-cols-3 grid-cols-2 gap-3">
+              {links.data.map((card, index) => (
+                <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="space-y-3">
-          <h3>Live Sites</h3>
-          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
-            {Links.sites.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
-            ))}
-          </div>
-        </div>
-        <div className="space-y-3">
-          <h3>Courses</h3>
-          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
-            {Links.courses.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
-            ))}
-          </div>
-        </div>
-        <div className="space-y-3">
-          <h3>Socials</h3>
-          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
-            {Links.socials.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
