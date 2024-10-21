@@ -1,13 +1,20 @@
 'use client'
+import Image from 'next/image';
 
 export function Card(props) {
 
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer"
-      className="border border-neutral-800 px-5 py-4 rounded-xl text-neutral-400 transition duration-300 ease-in-out hover:bg-indigo-500/20 hover:border-indigo-500/70 hover:text-white"
+      className={`${props.styles} group flex items-start gap-2 border border-neutral-800 md:p-3 p-2 rounded-2xl text-neutral-400 transition duration-300 ease-in-out hover:text-white`}
     >
-      <h2>{props.title}</h2>
-      <p>{props.user}</p>
+      <Image
+        className="size-12 md:grayscale md:opacity-30 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+        src={props.logo}
+        alt={props.title}
+      />
+      <div>
+        <p className=''>{props.title}</p>
+      </div>
     </a>
   );
 }

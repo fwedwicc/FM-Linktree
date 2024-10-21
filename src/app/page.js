@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       {/* Hero Section */}
-      <div className="p-3 lg:h-screen h-[80vh]">
+      <div className="p-3 lg:h-screen h-[70vh]">
         <div className='flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl p-6'>
           {/* Header */}
           <a href='https://fwedwicc.github.io/FM-Portfolio/'>
             <Image
-              className="w-6 h-auto"
+              className="md:w-6 w-5 h-auto"
               src={FMLogo}
               alt="FM Logo"
             />
@@ -35,7 +35,7 @@ export default function Home() {
                   <p className='leading-none text-xs'>Front-end Developer • UI/UX Designer • IT Student</p>
                 </div>
               </div>
-              <div className='flex items-start justify-between'>
+              <div className='flex items-start justify-between flex-wrap-reverse gap-1'>
                 {[
                   { name: 'moreno.frederick.capiral@gmail.com', link: 'mailto:moreno.frederick.capiral@gmail.com' },
                   { name: 'FM Portfolio', link: 'https://fwedwicc.github.io/FM-Portfolio/' },
@@ -54,36 +54,36 @@ export default function Home() {
         </div>
       </div>
       {/* Links Section */}
-      <div className="p-8 space-y-8 md:h-screen h-auto overflow-auto custom-scrollbar">
+      <div className="md:p-8 p-5 md:space-y-8 space-y-6 md:h-screen h-auto overflow-auto custom-scrollbar">
         <div className="space-y-3">
           <h3>Professions</h3>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
             {Links.profession.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
             ))}
           </div>
         </div>
         <div className="space-y-3">
           <h3>Live Sites</h3>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
             {Links.sites.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
             ))}
           </div>
         </div>
         <div className="space-y-3">
           <h3>Courses</h3>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
             {Links.courses.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
             ))}
           </div>
         </div>
         <div className="space-y-3">
           <h3>Socials</h3>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
             {Links.socials.map((card, index) => (
-              <Card key={index} title={card.title} user={card.user} link={card.link} />
+              <Card key={index} title={card.title} user={card.user} link={card.link} logo={card.logo} styles={card.styles} />
             ))}
           </div>
         </div>
