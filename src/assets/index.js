@@ -9,7 +9,9 @@ import TechCommr from './tech-commr-logo.png'
 import FMNeutral from './fm-neutral-logo.png'
 import quackOverflow from './quack-overflow-logo.png'
 import profolios from './profolios-logo.png'
-
+import Codedex from './codedex-logo.png'
+import FrontendMentor from './frontend-mentor-logo.png'
+import freeCodeCamp from './freecodecamp-logo.png'
 import Facebook from './facebook-logo.png'
 import Instagram from './instagram-logo.png'
 
@@ -26,7 +28,9 @@ export {
   FMNeutral,
   quackOverflow,
   profolios,
-
+  Codedex,
+  FrontendMentor,
+  freeCodeCamp,
   Facebook,
   Instagram
 }

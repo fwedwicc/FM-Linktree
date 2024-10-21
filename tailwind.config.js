@@ -20,7 +20,7 @@ module.exports = {
     // LinkedIn
     'hover:bg-blue-500/20',
     'hover:border-blue-500/50',
-    // GitHub & profolios
+    // profolios
     'hover:bg-stone-500/10',
     'hover:border-stone-500/50',
     // Dribbble
@@ -29,20 +29,23 @@ module.exports = {
     // Behance & Facebook
     'hover:bg-blue-700/20',
     'hover:border-blue-700/70',
+    // Instagram
+    'hover:bg-rose-500/10',
+    'hover:border-rose-500/50',
 
-    // Tech-Commr & FM DailyUI
+    // GitHub & Tech-Commr & FM DailyUI 
     'hover:bg-green-700/20',
     'hover:border-green-700/70',
     // fmUI & FM Gallery
     'hover:bg-neutral-500/10',
     'hover:border-neutral-500/50',
-    // quackOverflow
+    // quackOverflow, Codedex & freeCodeCamp
     'hover:bg-yellow-300/10',
     'hover:border-yellow-400/50',
 
-    // Instagram
-    'hover:bg-rose-500/10',
-    'hover:border-rose-500/50',
+    // Codedex
+    'hover:bg-blue-500/10',
+    'hover:border-blue-500/50',
   ],
   plugins: [],
 };

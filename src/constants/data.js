@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, FrontendMentor, freeCodeCamp } from "@/assets";
 
 export const Links = {
   profession: [
@@ -18,7 +18,7 @@ export const Links = {
       link: 'https://github.com/fwedwicc',
       logo: GitHub,
       title: "GitHub",
-      styles: "hover:bg-stone-500/10 hover:border-stone-500/50"
+      styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
       link: 'https://www.behance.net/fwedwicc',
@@ -86,21 +86,21 @@ export const Links = {
   courses: [
     {
       link: 'https://www.codedex.io/@fwedwicc',
-      logo: '',
+      logo: Codedex,
       title: "Codedex",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
     },
     {
       link: 'https://www.frontendmentor.io/profile/fwedwicc',
-      logo: '',
+      logo: FrontendMentor,
       title: "Frontend Mentor",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
     },
     {
       link: 'https://www.freecodecamp.org/fwedwic',
-      logo: '',
+      logo: freeCodeCamp,
       title: "freeCodeCamp",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
     }
   ]
 }
