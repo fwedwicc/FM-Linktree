@@ -1,4 +1,4 @@
-import { Behance, Dribbble, FMPortfolio, GitHub, LinkedIn } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram } from "@/assets";
 
 export const Links = {
   profession: [
@@ -36,63 +36,63 @@ export const Links = {
   sites: [
     {
       link: 'https://tech-commr.vercel.app/',
-      logo: FMPortfolio,
+      logo: TechCommr,
       title: "Tech-Commr",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
       link: 'https://fwedwicc.github.io/fmUI/',
-      logo: FMPortfolio,
+      logo: FMNeutral,
       title: "fmUI",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
       link: 'https://fwedwicc.github.io/FM-DailyUI/',
-      logo: FMPortfolio,
+      logo: FMNeutral,
       title: "FM DailyUI",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
       link: 'https://fwedwicc.github.io/FM-Gallery/',
-      logo: FMPortfolio,
+      logo: FMNeutral,
       title: "FM Gallery",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
       link: 'https://quack-overflow.vercel.app/',
-      logo: FMPortfolio,
+      logo: quackOverflow,
       title: "quackOverflow",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
     },
     {
       link: 'https://profolios-fm.vercel.app/',
-      logo: FMPortfolio,
+      logo: profolios,
       title: "profolios",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-stone-500/10 hover:border-stone-500/50"
     },
   ],
   courses: [
     {
       link: 'https://www.codedex.io/@fwedwicc',
-      logo: FMPortfolio,
+      logo: '',
       title: "Codedex",
       styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
       link: 'https://www.frontendmentor.io/profile/fwedwicc',
-      logo: FMPortfolio,
+      logo: '',
       title: "Frontend Mentor",
       styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
       link: 'https://www.freecodecamp.org/fwedwic',
-      logo: FMPortfolio,
+      logo: '',
       title: "freeCodeCamp",
       styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
       link: 'https://www.sololearn.com/en/profile/30552339',
-      logo: FMPortfolio,
+      logo: '',
       title: "Sololearn",
       styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
@@ -100,15 +100,15 @@ export const Links = {
   socials: [
     {
       link: 'https://web.facebook.com/fwedwic?_rdc=1&_rdr',
-      logo: FMPortfolio,
+      logo: Facebook,
       title: "Facebook",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
     },
     {
       link: 'https://www.instagram.com/freefinnn',
-      logo: FMPortfolio,
+      logo: Instagram,
       title: "Instagram",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
     },
   ],
 }
