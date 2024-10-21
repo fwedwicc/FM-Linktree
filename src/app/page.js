@@ -11,7 +11,8 @@ export default function Home() {
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[70vh]">
-        <div className='flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl p-6'>
+        <div className='relative flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl rounded-tr-[6.3rem] p-6'>
+          <div className='size-6 rounded-full bg-neutral-200 absolute top-0 right-0'></div>
           {/* Header */}
           <a href='https://fwedwicc.github.io/FM-Portfolio/'>
             <Image
