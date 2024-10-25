@@ -42,10 +42,12 @@ module.exports = {
     // quackOverflow, Codedex & freeCodeCamp
     'hover:bg-yellow-300/10',
     'hover:border-yellow-400/50',
-
     // Codedex
     'hover:bg-blue-500/10',
     'hover:border-blue-500/50',
+    // Codepen
+    'hover:bg-sky-500/10',
+    'hover:border-sky-500/50',
   ],
   plugins: [],
 };

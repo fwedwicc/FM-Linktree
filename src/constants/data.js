@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, FrontendMentor, freeCodeCamp } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp } from "@/assets";
 
 export const Links = {
   profession: [
@@ -91,16 +91,22 @@ export const Links = {
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
     },
     {
-      link: 'https://www.frontendmentor.io/profile/fwedwicc',
-      logo: FrontendMentor,
-      title: "Frontend Mentor",
-      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+      link: 'https://codepen.io/fwedwicc',
+      logo: Codepen,
+      title: "Codepen",
+      styles: "hover:bg-sky-500/10 hover:border-sky-500/50"
     },
     {
       link: 'https://www.freecodecamp.org/fwedwic',
       logo: freeCodeCamp,
       title: "freeCodeCamp",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
+    },
+    {
+      link: 'https://www.frontendmentor.io/profile/fwedwicc',
+      logo: FrontendMentor,
+      title: "Frontend Mentor",
+      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
     }
   ]
 }
