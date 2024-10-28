@@ -13,6 +13,7 @@ import Codedex from './codedex-logo.png'
 import Codepen from './codepen-logo.png'
 import FrontendMentor from './frontend-mentor-logo.png'
 import freeCodeCamp from './freecodecamp-logo.png'
+import TikTok from './tiktok-logo.png'
 import Facebook from './facebook-logo.png'
 import Instagram from './instagram-logo.png'
 
@@ -34,5 +35,6 @@ export {
   FrontendMentor,
   freeCodeCamp,
   Facebook,
-  Instagram
+  Instagram,
+  TikTok
 }

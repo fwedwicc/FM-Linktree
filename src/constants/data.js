@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
 
 export const Links = {
   profession: [
@@ -33,17 +33,23 @@ export const Links = {
       styles: "hover:bg-pink-500/10 hover:border-pink-500/50"
     },
     {
-      link: 'https://web.facebook.com/fwedwic?_rdc=1&_rdr',
-      logo: Facebook,
-      title: "Facebook",
-      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+      link: 'https://www.tiktok.com/@fwedwicc',
+      logo: TikTok,
+      title: "TikTok",
+      styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
     },
     {
       link: 'https://www.instagram.com/freefinnn',
       logo: Instagram,
       title: "Instagram",
       styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
-    }
+    },
+    {
+      link: 'https://web.facebook.com/fwedwic?_rdc=1&_rdr',
+      logo: Facebook,
+      title: "Facebook",
+      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+    },
   ],
   sites: [
     {
