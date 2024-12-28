@@ -34,6 +34,7 @@
   @apply md:flex hidden z-50 size-12 fixed top-0 left-0 rounded-full pointer-events-none border border-neutral-500/50;
 }
 .cursor-dot {
+  @apply md:flex hidden;
   transition: transform 0.1s ease;
 }
 

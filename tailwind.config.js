@@ -42,6 +42,9 @@ module.exports = {
     // quackOverflow, Codedex & freeCodeCamp
     'hover:bg-yellow-300/10',
     'hover:border-yellow-400/50',
+    // pixelore
+    'hover:bg-yellow-600/10',
+    'hover:border-yellow-600/50',
     // Codedex
     'hover:bg-blue-500/10',
     'hover:border-blue-500/50',

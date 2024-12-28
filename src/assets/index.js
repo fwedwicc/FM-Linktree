@@ -9,6 +9,7 @@ import TechCommr from './tech-commr-logo.png'
 import FMNeutral from './fm-neutral-logo.png'
 import quackOverflow from './quack-overflow-logo.png'
 import profolios from './profolios-logo.png'
+import pixelore from './pixelore-logo.png'
 import Codedex from './codedex-logo.png'
 import Codepen from './codepen-logo.png'
 import FrontendMentor from './frontend-mentor-logo.png'
@@ -30,6 +31,7 @@ export {
   FMNeutral,
   quackOverflow,
   profolios,
+  pixelore,
   Codedex,
   Codepen,
   FrontendMentor,

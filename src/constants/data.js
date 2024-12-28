@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
 
 export const Links = {
   profession: [
@@ -87,6 +87,12 @@ export const Links = {
       logo: profolios,
       title: "profolios",
       styles: "hover:bg-stone-500/10 hover:border-stone-500/50"
+    },
+    {
+      link: 'https://pixelore.vercel.app/',
+      logo: pixelore,
+      title: "pixelore",
+      styles: "hover:bg-yellow-600/10 hover:border-yellow-600/50"
     },
   ],
   courses: [
