@@ -13,8 +13,9 @@ export function Card(props) {
         src={props.logo}
         alt={props.title}
       />
-      <div>
-        <p className='leading-none truncate w-full md:max-w-full max-w-[4.9rem]'>{props.title}</p>
+      <div className='space-y-1.5'>
+        <p className='leading-none truncate w-full md:max-w-full max-w-[4.9rem] text-neutral-300'>{props.title}</p>
+        <p className='leading-none text-neutral-500 text-xs'>{props.status}</p>
       </div>
     </a>
   );
