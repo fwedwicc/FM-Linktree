@@ -71,7 +71,7 @@ export const Links = {
       link: 'https://fwedwicc.github.io/fmUI/',
       logo: FMNeutral,
       title: "fmUI",
-      status: "Finished",
+      status: "In progress",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
