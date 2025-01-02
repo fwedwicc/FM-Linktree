@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
 
 export const Links = {
   profession: [
@@ -8,6 +8,13 @@ export const Links = {
       title: "LinkedIn",
       status: "Active",
       styles: "hover:bg-blue-500/20 hover:border-blue-500/50"
+    },
+    {
+      link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
+      logo: Upwork,
+      title: "Upwork",
+      status: "Active",
+      styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
       link: 'https://github.com/fwedwicc',
