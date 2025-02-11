@@ -7,6 +7,7 @@ import Dribbble from './dribbble-logo.png'
 import GitHub from './github-logo.png'
 import Behance from './behance-logo.png'
 import TechCommr from './tech-commr-logo.png'
+import iConv from './iconv-logo.png'
 import FMNeutral from './fm-neutral-logo.png'
 import quackOverflow from './quack-overflow-logo.png'
 import profolios from './profolios-logo.png'
@@ -30,6 +31,7 @@ export {
   GitHub,
   Behance,
   TechCommr,
+  iConv,
   FMNeutral,
   quackOverflow,
   profolios,

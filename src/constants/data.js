@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
 
 export const Links = {
   profession: [
@@ -13,7 +13,7 @@ export const Links = {
       link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
       logo: Upwork,
       title: "Upwork",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
@@ -73,6 +73,13 @@ export const Links = {
       title: "Tech-Commr",
       status: "Finished",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
+    },
+    {
+      link: 'https://iconv.vercel.app/',
+      logo: iConv,
+      title: "iConv",
+      status: "In progress",
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
       link: 'https://fwedwicc.github.io/fmUI/',
