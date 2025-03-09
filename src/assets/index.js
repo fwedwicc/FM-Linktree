@@ -8,6 +8,7 @@ import GitHub from './github-logo.png'
 import Behance from './behance-logo.png'
 import TechCommr from './tech-commr-logo.png'
 import iConv from './iconv-logo.png'
+import Vite from './vite-logo.png'
 import FMNeutral from './fm-neutral-logo.png'
 import quackOverflow from './quack-overflow-logo.png'
 import profolios from './profolios-logo.png'
@@ -32,6 +33,7 @@ export {
   Behance,
   TechCommr,
   iConv,
+  Vite,
   FMNeutral,
   quackOverflow,
   profolios,

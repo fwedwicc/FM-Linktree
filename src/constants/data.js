@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
 
 export const Links = {
   profession: [
@@ -80,6 +80,13 @@ export const Links = {
       title: "iConv",
       status: "In progress",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+    },
+    {
+      link: 'https://rebyuwer.vercel.app/',
+      logo: Vite,
+      title: "Rebyuwer",
+      status: "Finished",
+      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
       link: 'https://fwedwicc.github.io/fmUI/',
