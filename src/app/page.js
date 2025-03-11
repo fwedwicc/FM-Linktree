@@ -172,7 +172,7 @@ export default function Home() {
             <div className="pt-6 space-y-1">
               <p className='text-xs text-left'>Preview:</p>
               <p className="italic text-start">
-                "Hi there! I’m{" "}
+                &ldquo;Hi there! I&apos;m{" "}
                 {formData.name ? (
                   <span className="text-indigo-500">{formData.name}</span>
                 ) : (
@@ -184,12 +184,12 @@ export default function Home() {
                 ) : (
                   <span className="text-indigo-500">your email</span>
                 )}
-                , Here’s my message;{" "}
+                , Here&apos;s my message;{" "}
                 {formData.message ? (
                   <span className="text-indigo-500">{formData.message}</span>
                 ) : (
                   <span className="text-indigo-500">your message</span>
-                )}"
+                )}&rdquo;
               </p>
             </div>
             {/* Action Buttons */}
