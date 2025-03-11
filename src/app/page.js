@@ -6,20 +6,96 @@ import { Cursor } from "@/components/Cursor"
 import { Card } from "@/components/Card"
 import { Ball } from "@/components/Ball"
 import { Links } from "@/constants/data"
+import emailjs from '@emailjs/browser'
 
 export default function Home() {
+
+  const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID
+  const publicUser = process.env.NEXT_PUBLIC_PUBLIC_USER
+
   const currentYear = new Date().getFullYear()
   const [isOpenForm, setIsOpenForm] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+  const [errors, setErrors] = useState({})
 
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+
+  // Form Validation
+  const validate = () => {
+    let formErrors = {}
+    if (!formData.name) formErrors.name = 'Name is required'
+    if (!formData.message) formErrors.message = 'Message is required'
+    if (!formData.email) {
+      formErrors.email = 'Email address is required'
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      formErrors.email = 'Email address is invalid'
+    }
+    return formErrors
+  }
+
+  // Hnadle form logic
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formErrors = validate()
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors)
+    } else {
+      console.log('Form data submitted:', formData)
+      setErrors({})
+      setIsOpenForm(false)
+      emailjs
+        .send(
+          serviceId,
+          templateId,
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          },
+          publicUser
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+            // Simulate form submission
+            setTimeout(() => {
+              setFormData({
+                name: '',
+                email: '',
+                message: '',
+              })
+              // setIsSuccessOpen(true)
+            }, 1000)
+          },
+          (error) => {
+            console.log(error.text)
+            alert('An error occurred. Please try again.')
+          }
+        )
+    }
+  }
+
+
+  // Close Contact Form
   const closeModalForm = () => {
     setIsOpenForm(false)
   }
 
+  // Open Contact Form
   const openModalForm = () => {
     setIsOpenForm(true)
   }
-
-
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
@@ -35,7 +111,93 @@ export default function Home() {
             }`}
         >
           <h1 className='text-neutral-200 text-xl'>Under construction :)</h1>
-          <button onClick={closeModalForm}>Close</button>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Complete Name */}
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-3'>
+              {/* Name */}
+              <div>
+                <label
+                  htmlFor="name"
+                  className={`relative block overflow-hidden rounded-md text-white border border-[#59568fbd]/20 px-3 pt-3 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out ${errors.name ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder='Name'
+                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 md:text-sm text-xs" />
+                  <span
+                    className="absolute start-3 top-3 -translate-y-1/2 md:text-sm text-xs text-[#afacdebd] transition-all peer-placeholder-shown:top-1/2 md:peer-placeholder-shown:text-sm peer-placeholder-shown:text-xs peer-focus:top-3 md:peer-focus:text-xs md:peer-focus:text-[11px]">
+                    Name
+                  </span>
+                </label>
+                {errors.name && <p className="text-yellow-400 md:text-sm text-xs mt-1 text-left">{errors.name}</p>}
+              </div>
+              {/* Email */}
+              <div>
+                <label
+                  htmlFor="email"
+                  className={`relative block overflow-hidden rounded-md text-white border border-[#59568fbd]/20 px-3 pt-3 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out ${errors.email ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder='Name'
+                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 md:text-sm text-xs" />
+                  <span
+                    className="absolute start-3 top-3 -translate-y-1/2 md:text-sm text-xs text-[#afacdebd] transition-all peer-placeholder-shown:top-1/2 md:peer-placeholder-shown:text-sm peer-placeholder-shown:text-xs peer-focus:top-3 md:peer-focus:text-xs md:peer-focus:text-[11px]">
+                    Email
+                  </span>
+                </label>
+                {errors.email && <p className="text-yellow-400 md:text-sm text-xs mt-1 text-left">{errors.email}</p>}
+              </div>
+              {/* Message */}
+              <div className='col-span-full'>
+                <textarea
+                  id="message"
+                  className={`w-full rounded-lg bg-transparent border-[#59568fbd]/20 align-top text-white placeholder:text-[#afacdebd] shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out sm:text-sm md:text-sm text-xs resize-none ${errors.message ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}
+                  rows="2"
+                  placeholder="Your message here..."
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
+                {errors.message && <p className="text-yellow-400 md:text-sm text-xs mt-1 text-left">{errors.message}</p>}
+              </div>
+            </div>
+            {/* Preview */}
+            <div className="pt-6 space-y-1">
+              <p className='text-xs text-left'>Preview:</p>
+              <p className="italic text-start">
+                "Hi there! I’m{" "}
+                {formData.name ? (
+                  <span className="text-indigo-500">{formData.name}</span>
+                ) : (
+                  <span className="text-indigo-500">your name</span>
+                )}
+                . You can reach me at{" "}
+                {formData.email ? (
+                  <span className="text-indigo-500">{formData.email}</span>
+                ) : (
+                  <span className="text-indigo-500">your email</span>
+                )}
+                , Here’s my message;{" "}
+                {formData.message ? (
+                  <span className="text-indigo-500">{formData.message}</span>
+                ) : (
+                  <span className="text-indigo-500">your message</span>
+                )}"
+              </p>
+            </div>
+            {/* Action Buttons */}
+            <div className='flex justify-center gap-3 pt-8'>
+              <button onClick={closeModalForm} type="button">Close</button>
+              <button type="submit" styles='bg-indigo-600 hover:bg-indigo-700'>Submit</button>
+            </div>
+          </form>
         </div>
       </div>
       {/* Hero Section */}
