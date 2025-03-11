@@ -1,18 +1,43 @@
 'use client'
-import Image from 'next/image';
-import { FMLogo, FrederickMoreno } from '@/assets';
-import { Cursor } from "@/components/Cursor";
-import { Card } from "@/components/Card";
-import { Ball } from "@/components/Ball";
-import { Links } from "@/constants/data";
+import React, { useState } from 'react'
+import Image from 'next/image'
+import { FMLogo, FrederickMoreno } from '@/assets'
+import { Cursor } from "@/components/Cursor"
+import { Card } from "@/components/Card"
+import { Ball } from "@/components/Ball"
+import { Links } from "@/constants/data"
 
 export default function Home() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
+  const [isOpenForm, setIsOpenForm] = useState(false)
+
+  const closeModalForm = () => {
+    setIsOpenForm(false)
+  }
+
+  const openModalForm = () => {
+    setIsOpenForm(true)
+  }
+
+
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       <Cursor />
       <Ball />
+      {/* Contact Form */}
+      <div
+        className={`z-40 fixed inset-0 flex items-center justify-center bg-neutral-900/40 transition-all duration-300 ease-out ${isOpenForm ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+      >
+        <div
+          className={`bg-neutral-900 backdrop-blur-md border border-neutral-800/40 rounded-2xl md:p-6 p-4 max-w-sm text-center transform transition-all duration-300 ease-out ${isOpenForm ? 'scale-100' : 'scale-95'
+            }`}
+        >
+          <h1 className='text-neutral-200 text-xl'>Under construction :)</h1>
+          <button onClick={closeModalForm}>Close</button>
+        </div>
+      </div>
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[70vh]">
         <div className='relative flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl rounded-tr-[6.3rem] p-6'>
@@ -41,16 +66,16 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex items-start justify-between flex-wrap-reverse gap-1'>
-                {[
-                  { name: 'moreno.frederick.capiral@gmail.com', link: 'mailto:moreno.frederick.capiral@gmail.com' },
-                  { name: 'FM Portfolio', link: 'https://fwedwicc.github.io/FM-Portfolio/' },
-                ].map((item, index) => (
-                  <a href={item.link} target='_blank' rel='noopener noreferrer' className='flex items-center text-indigo-400 text-xs underline' key={index}>{item.name}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shrink-0 mt-[1.7px] size-3.5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </a>
-                ))}
+                <button onClick={openModalForm} className='flex items-center text-indigo-400 text-xs underline'>Drop me a line
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shrink-0 mt-[1.7px] size-3.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </button>
+                <a href='https://fwedwicc.github.io/FM-Portfolio/' target='_blank' rel='noopener noreferrer' className='flex items-center text-indigo-400 text-xs underline'>FM Portfolio
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shrink-0 mt-[1.7px] size-3.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -76,5 +101,5 @@ export default function Home() {
         ))}
       </div>
     </div>
-  );
+  )
 }
