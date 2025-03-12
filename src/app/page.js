@@ -22,6 +22,7 @@ export default function Home() {
     message: '',
   })
   const [errors, setErrors] = useState({})
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -75,7 +76,7 @@ export default function Home() {
                 email: '',
                 message: '',
               })
-              // setIsSuccessOpen(true)
+              setIsSuccessOpen(true)
             }, 1000)
           },
           (error) => {
@@ -84,6 +85,11 @@ export default function Home() {
           }
         )
     }
+  }
+
+  // Open Contact Form
+  const openModalForm = () => {
+    setIsOpenForm(true)
   }
 
   // Close Contact Form
@@ -97,9 +103,8 @@ export default function Home() {
     })
   }
 
-  // Open Contact Form
-  const openModalForm = () => {
-    setIsOpenForm(true)
+  const closeSuccessModal = () => {
+    setIsSuccessOpen(false)
   }
 
   return (
@@ -211,6 +216,24 @@ export default function Home() {
               <button type="submit" className='bg-indigo-500 hover:bg-indigo-600 md:py-2 py-1.5 md:px-3 px-2.5 rounded-md text-neutral-200 text-sm transition-all duration-300 ease-in-out'>Submit</button>
             </div>
           </form>
+        </div>
+      </div>
+      {/* Success Modal */}
+      <div
+        className={`z-40 fixed inset-0 flex items-center justify-center bg-neutral-900/40 backdrop-blur-sm transition-all duration-300 ease-out ${isSuccessOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+      >
+        <div
+          className={`bg-neutral-900 backdrop-blur-md border border-neutral-700/40 rounded-3xl md:p-6 p-5 mx-3 max-w-sm text-center transform transition-all duration-300 ease-out ${isSuccessOpen ? 'scale-100' : 'scale-95'
+            }`}
+        >
+          <div className="mb-6 flex flex-col items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-14 text-green-500 mb-3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+            </svg>
+            <p className='text-md text-neutral-300'>Message sent successfully! <br />I'll get back to you soon!</p>
+          </div>
+          <button onClick={closeSuccessModal} className='bg-indigo-500 hover:bg-indigo-600 md:py-2 py-1.5 md:px-3 px-2.5 rounded-md text-neutral-200 text-sm transition-all duration-300 ease-in-out'>Got it</button>
         </div>
       </div>
       {/* Hero Section */}
