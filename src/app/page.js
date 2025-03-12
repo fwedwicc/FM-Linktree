@@ -86,10 +86,15 @@ export default function Home() {
     }
   }
 
-
   // Close Contact Form
   const closeModalForm = () => {
     setIsOpenForm(false)
+    setErrors({})
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    })
   }
 
   // Open Contact Form
@@ -103,22 +108,23 @@ export default function Home() {
       <Ball />
       {/* Contact Form */}
       <div
-        className={`z-40 fixed inset-0 flex items-center justify-center bg-neutral-900/40 transition-all duration-300 ease-out ${isOpenForm ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        className={`z-40 fixed inset-0 flex items-center justify-center bg-neutral-900/40 backdrop-blur-sm transition-all duration-300 ease-out ${isOpenForm ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
       >
         <div
-          className={`bg-neutral-900 backdrop-blur-md border border-neutral-800/40 rounded-2xl md:p-6 p-4 max-w-sm text-center transform transition-all duration-300 ease-out ${isOpenForm ? 'scale-100' : 'scale-95'
+          className={`bg-neutral-900 backdrop-blur-md border border-neutral-700/40 rounded-3xl md:p-6 p-5 mx-3 max-w-lg text-center transform transition-all duration-300 ease-out ${isOpenForm ? 'scale-100' : 'scale-95'
             }`}
         >
-          <h1 className='text-neutral-200 text-xl'>Under construction :)</h1>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-3">
+            <h3 className='text-left mb-8 leading-none text-2xl'>Drop me a line.</h3>
             {/* Complete Name */}
             <div className='grid md:grid-cols-2 grid-cols-1 gap-3'>
               {/* Name */}
               <div>
                 <label
                   htmlFor="name"
-                  className={`relative block overflow-hidden rounded-md text-white border border-[#59568fbd]/20 px-3 pt-3 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out ${errors.name ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}>
+                  className={`relative block overflow-hidden border-b bg-transparent pt-3 focus-within:border-indigo-400 transition-all duration-300 ease-in-out ${errors.name ? 'border-yellow-500/30' : 'border-neutral-800'}`}
+                >
                   <input
                     type="text"
                     id="name"
@@ -126,9 +132,12 @@ export default function Home() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder='Name'
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 md:text-sm text-xs" />
+                    className="peer h-8 w-full border-none bg-transparent text-neutral-300 p-0 placeholder-transparent focus:border-transparent outline-none focus:ring-0 focus:outline-none sm:text-sm transition-all duration-300 ease-in-out"
+                  />
+
                   <span
-                    className="absolute start-3 top-3 -translate-y-1/2 md:text-sm text-xs text-[#afacdebd] transition-all peer-placeholder-shown:top-1/2 md:peer-placeholder-shown:text-sm peer-placeholder-shown:text-xs peer-focus:top-3 md:peer-focus:text-xs md:peer-focus:text-[11px]">
+                    className="absolute start-0 top-2 -translate-y-1/2 text-xs text-neutral-400 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs"
+                  >
                     Name
                   </span>
                 </label>
@@ -138,7 +147,8 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="email"
-                  className={`relative block overflow-hidden rounded-md text-white border border-[#59568fbd]/20 px-3 pt-3 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out ${errors.email ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}>
+                  className={`relative block overflow-hidden border-b bg-transparent pt-3 focus-within:border-indigo-400 transition-all duration-300 ease-in-out ${errors.email ? 'border-yellow-500/30' : 'border-neutral-800'}`}
+                >
                   <input
                     type="text"
                     id="email"
@@ -146,9 +156,12 @@ export default function Home() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder='Name'
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 md:text-sm text-xs" />
+                    className="peer h-8 w-full border-none bg-transparent text-neutral-300 p-0 placeholder-transparent focus:border-transparent outline-none focus:ring-0 focus:outline-none sm:text-sm transition-all duration-300 ease-in-out"
+                  />
+
                   <span
-                    className="absolute start-3 top-3 -translate-y-1/2 md:text-sm text-xs text-[#afacdebd] transition-all peer-placeholder-shown:top-1/2 md:peer-placeholder-shown:text-sm peer-placeholder-shown:text-xs peer-focus:top-3 md:peer-focus:text-xs md:peer-focus:text-[11px]">
+                    className="absolute start-0 top-2 -translate-y-1/2 text-xs text-neutral-400 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-xs"
+                  >
                     Email
                   </span>
                 </label>
@@ -158,44 +171,44 @@ export default function Home() {
               <div className='col-span-full'>
                 <textarea
                   id="message"
-                  className={`w-full rounded-lg bg-transparent border-[#59568fbd]/20 align-top text-white placeholder:text-[#afacdebd] shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition duration-300 ease-in-out sm:text-sm md:text-sm text-xs resize-none ${errors.message ? 'border-yellow-500/30' : 'border-[#59568fbd]/20'}`}
-                  rows="2"
-                  placeholder="Your message here..."
+                  className={`w-full resize-none bg-transparent border-b px-0 align-top focus:border-indigo-400 outline-none placeholder:text-neutral-400 sm:placeholder:text-sm focus:ring-0 focus:outline-none sm:text-sm text-neutral-300 transition-all duration-300 ease-in-out ${errors.message ? 'border-yellow-500/30' : 'border-neutral-800'}`}
+                  rows="3"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
+                  placeholder="Your message here..."
                 ></textarea>
                 {errors.message && <p className="text-yellow-400 md:text-sm text-xs mt-1 text-left">{errors.message}</p>}
               </div>
             </div>
             {/* Preview */}
-            <div className="pt-6 space-y-1">
+            <div className="pt-6 space-y-1 overflow-hidden">
               <p className='text-xs text-left'>Preview:</p>
-              <p className="italic text-start">
+              <p className="italic text-start text-neutral-300 text-sm">
                 &ldquo;Hi there! I&apos;m{" "}
                 {formData.name ? (
-                  <span className="text-indigo-500">{formData.name}</span>
+                  <span className="text-indigo-400">{formData.name}</span>
                 ) : (
-                  <span className="text-indigo-500">your name</span>
+                  <span className="text-indigo-400">your name</span>
                 )}
                 . You can reach me at{" "}
                 {formData.email ? (
-                  <span className="text-indigo-500">{formData.email}</span>
+                  <span className="text-indigo-400">{formData.email}</span>
                 ) : (
-                  <span className="text-indigo-500">your email</span>
+                  <span className="text-indigo-400">your email</span>
                 )}
                 , Here&apos;s my message;{" "}
                 {formData.message ? (
-                  <span className="text-indigo-500">{formData.message}</span>
+                  <span className="text-indigo-400">{formData.message}</span>
                 ) : (
-                  <span className="text-indigo-500">your message</span>
+                  <span className="text-indigo-400 hyphens-manual break-words">your message</span>
                 )}&rdquo;
               </p>
             </div>
             {/* Action Buttons */}
-            <div className='flex justify-center gap-3 pt-8'>
-              <button onClick={closeModalForm} type="button">Close</button>
-              <button type="submit" styles='bg-indigo-600 hover:bg-indigo-700'>Submit</button>
+            <div className='flex justify-end gap-3 pt-8'>
+              <button onClick={closeModalForm} type="button" className='bg-neutral-800/70 hover:bg-neutral-700/50 md:py-2 py-1.5 md:px-3 px-2.5 rounded-md text-neutral-300 text-sm transition-all duration-300 ease-in-out'>Close</button>
+              <button type="submit" className='bg-indigo-500 hover:bg-indigo-600 md:py-2 py-1.5 md:px-3 px-2.5 rounded-md text-neutral-200 text-sm transition-all duration-300 ease-in-out'>Submit</button>
             </div>
           </form>
         </div>
@@ -218,7 +231,7 @@ export default function Home() {
             <div className="border-y border-dashed border-neutral-800 py-4 space-y-6">
               <div className='flex items-start gap-3'>
                 <Image
-                  className="mt-2 size-8 border-2 ring-2 ring-indigo-500 border-neutral-950 rounded-full"
+                  className="mt-2 size-8 border-2 ring-2 ring-indigo-400 border-neutral-950 rounded-full"
                   src={FrederickMoreno}
                   alt="Frederick Moreno"
                 />
