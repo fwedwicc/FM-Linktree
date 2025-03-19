@@ -98,7 +98,7 @@ export const Links = {
     {
       link: 'https://fwedwicc.github.io/FM-DailyUI/',
       logo: FMNeutral,
-      title: "FM DailyUI",
+      title: "FM DailyUI S1",
       status: "Finished",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
