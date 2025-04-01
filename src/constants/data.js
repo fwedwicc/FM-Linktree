@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets";
+import { Behance, Dribbble, Facebook, FMNeutral, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
 
 export const Links = {
   profession: [
@@ -13,7 +13,7 @@ export const Links = {
       link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
       logo: Upwork,
       title: "Upwork",
-      status: "Inactive",
+      status: "Active",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
@@ -101,6 +101,13 @@ export const Links = {
       title: "FM DailyUI S1",
       status: "Finished",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
+    },
+    {
+      link: 'https://fwedwicc.github.io/FM-DailyUI-S2/',
+      logo: FMGray,
+      title: "FM DailyUI S2",
+      status: "In progress",
+      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
       link: 'https://fwedwicc.github.io/FM-Gallery/',

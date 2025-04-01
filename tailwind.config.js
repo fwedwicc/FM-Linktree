@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   safelist: [
-    // FM Portfolio
+    // FM Portfolio & FM DailyUI S2
     'hover:bg-indigo-700/20',
     'hover:border-indigo-700/70',
     // LinkedIn
@@ -33,7 +33,7 @@ module.exports = {
     'hover:bg-rose-500/10',
     'hover:border-rose-500/50',
 
-    // GitHub & Tech-Commr & FM DailyUI 
+    // GitHub & Tech-Commr & FM DailyUI S1
     'hover:bg-green-700/20',
     'hover:border-green-700/70',
     // fmUI & FM Gallery
