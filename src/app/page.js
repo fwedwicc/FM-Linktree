@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { FMLogo, FrederickMoreno } from '@/assets'
+import { BuyMeACoffee } from '@/assets'
 import { Cursor } from "@/components/Cursor"
 import { Card } from "@/components/Card"
 import { Ball } from "@/components/Ball"
@@ -238,7 +239,7 @@ export default function Home() {
       </div>
       {/* Hero Section */}
       <div className="p-3 lg:h-screen h-[70vh]">
-        <div className='relative flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl rounded-tr-[6.3rem] p-6'>
+        <div className='relative flex flex-col h-full justify-between bg-neutral-800/20 border border-neutral-800 rounded-3xl rounded-tr-[6.3rem] md:p-6 p-4.5'>
           <div className='size-6 rounded-full bg-neutral-200 absolute top-0 right-0'></div>
           {/* Header */}
           <a href='https://fwedwicc.github.io/FM-Portfolio/'>
@@ -278,7 +279,17 @@ export default function Home() {
             </div>
           </div>
           {/* Footer */}
-          <p className='text-xs'>{currentYear} • Frederick Moreno</p>
+          <div className='flex flex-wrap justify-between items-end'>
+            <p className='text-xs'>{currentYear} • Frederick Moreno</p>
+            <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-2 text-neutral-300 text-xs rounded-[10px] border border-neutral-700/50 hover:bg-yellow-300/10 hover:border-yellow-400/50 p-2 transition duration-300 ease-in-out'>
+              <Image
+                className="h-6 w-auto rounded-[5px]"
+                src={BuyMeACoffee}
+                alt="Buy Me A Coffee"
+              />
+              Buy me a coffee
+            </a>
+          </div>
         </div>
       </div>
       {/* Links Section */}

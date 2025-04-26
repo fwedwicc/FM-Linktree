@@ -21,6 +21,7 @@ import freeCodeCamp from './freecodecamp-logo.png'
 import TikTok from './tiktok-logo.png'
 import Facebook from './facebook-logo.png'
 import Instagram from './instagram-logo.png'
+import BuyMeACoffee from './buy-me-a-coffee-logo.png'
 
 
 export {
@@ -46,5 +47,6 @@ export {
   freeCodeCamp,
   Facebook,
   Instagram,
-  TikTok
+  TikTok,
+  BuyMeACoffee
 }
