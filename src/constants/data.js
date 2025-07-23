@@ -13,7 +13,7 @@ export const Links = {
       link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
       logo: Upwork,
       title: "Upwork",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
     },
     {
@@ -41,7 +41,7 @@ export const Links = {
       link: 'https://www.tiktok.com/@fwedwicc',
       logo: TikTok,
       title: "TikTok",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
     },
     {
@@ -143,14 +143,14 @@ export const Links = {
       link: 'https://www.codedex.io/@fwedwicc',
       logo: Codedex,
       title: "Codédex",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
     },
     {
       link: 'https://codepen.io/fwedwicc',
       logo: Codepen,
       title: "Codepen",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-sky-500/10 hover:border-sky-500/50"
     },
     {
