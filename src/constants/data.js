@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
 
 export const Links = {
   profession: [
@@ -73,6 +73,13 @@ export const Links = {
       title: "Tech-Commr",
       status: "Finished",
       styles: "hover:bg-green-700/20 hover:border-green-700/70"
+    },
+    {
+      link: 'https://undecide.dev/',
+      logo: Undecide,
+      title: "Undecide",
+      status: "In progress",
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
       link: 'https://iconv.vercel.app/',
