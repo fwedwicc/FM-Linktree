@@ -17,7 +17,7 @@ export function Card(props) {
         <p className='leading-none truncate w-full md:max-w-full max-w-[4.9rem] text-neutral-300'>{props.title}</p>
         <p className='flex items-center gap-1 leading-none text-neutral-500 text-xs'>
           <span className={`md:size-1.5 size-1 rounded-full 
-          ${props.status === 'Finished' || props.status === 'Active' ? 'bg-green-500' : props.status === 'In progress' ? 'bg-blue-500' : 'bg-amber-500'}`}></span>
+          ${props.status === 'Finished' || props.status === 'Active' || props.status === 'On going' ? 'bg-green-500' : props.status === 'In progress' ? 'bg-blue-500' : 'bg-amber-500'}`}></span>
           {props.status}
         </p>
       </div>

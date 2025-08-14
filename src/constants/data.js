@@ -78,14 +78,14 @@ export const Links = {
       link: 'https://undecide.dev/',
       logo: Undecide,
       title: "Undecide",
-      status: "In progress",
+      status: "On going",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
       link: 'https://iconv.vercel.app/',
       logo: iConv,
       title: "iConv",
-      status: "In progress",
+      status: "Finished",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
     },
     {
@@ -113,7 +113,7 @@ export const Links = {
       link: 'https://fwedwicc.github.io/FM-DailyUI-S2/',
       logo: FMGray,
       title: "FM DailyUI S2",
-      status: "In progress",
+      status: "On going",
       styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
     },
     {
