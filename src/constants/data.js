@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMNeutral, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
 
 export const Links = {
   profession: [
