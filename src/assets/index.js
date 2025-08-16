@@ -11,6 +11,7 @@ import Undecide from './undecide-logo.png'
 import iConv from './iconv-logo.png'
 import Vite from './vite-logo.png'
 import FMNeutral from './fm-neutral-logo.png'
+import FMDark from './fm-dark-logo.png'
 import FMGray from './fm-gray-logo.png'
 import quackOverflow from './quack-overflow-logo.png'
 import profolios from './profolios-logo.png'
@@ -39,6 +40,7 @@ export {
   iConv,
   Vite,
   FMNeutral,
+  FMDark,
   FMGray,
   quackOverflow,
   profolios,
