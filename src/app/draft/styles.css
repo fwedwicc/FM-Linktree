@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playfair+Display:wght@400..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-100 text-neutral-800 custom-scrollbar;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  p {
+    @apply leading-relaxed md:text-sm text-xs;
+  }
+  h1 {
+    @apply text-6xl md:text-8xl font-bold;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  h3 {
+    @apply text-neutral-800 text-xl md:text-2xl font-medium;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  h4 {
+    @apply text-base md:text-lg font-medium;
+  }
+}
+
+.ball {
+  @apply md:flex hidden z-50 size-12 fixed top-0 left-0 rounded-full pointer-events-none border border-neutral-500/50;
+}
+.cursor-dot {
+  @apply md:flex hidden;
+  transition: transform 0.1s ease;
+}
+
+/* ------------------------ Scrollbar Styles ------------------------ */
+.custom-scrollbar {
+  overflow-y: auto;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply rounded-lg bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-neutral-700;
+}
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+.invisible-scrollbar::-webkit-scrollbar-track {
+  @apply rounded-sm bg-transparent;
+}
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-transparent;
+}
