@@ -9,7 +9,7 @@ import { Ball } from "@/components/Ball"
 import { Links } from "@/constants/data"
 import emailjs from '@emailjs/browser'
 
-export default function v1() {
+export default function V1() {
 
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID

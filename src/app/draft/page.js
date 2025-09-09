@@ -10,7 +10,7 @@ import { Ball } from "@/components/Ball"
 import { Links } from "@/constants/data"
 import emailjs from '@emailjs/browser'
 
-export default function draft() {
+export default function Draft() {
 
   const currentYear = new Date().getFullYear()
 
