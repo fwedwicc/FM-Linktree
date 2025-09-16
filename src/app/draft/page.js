@@ -5,8 +5,9 @@ import Image from 'next/image'
 import { FMLogo, FrederickMoreno } from '@/assets'
 import { BuyMeACoffee } from '@/assets'
 import { Cursor } from "@/components/Cursor"
-import { Card } from "@/components/Card"
+import { LightCard } from "@/components/LightCard"
 import { Ball } from "@/components/Ball"
+import { Select } from "@/components/Select"
 import { Links } from "@/constants/data"
 import emailjs from '@emailjs/browser'
 
@@ -23,7 +24,9 @@ export default function Draft() {
         <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-3xl p-1.5'>
 
           {/* Header */}
-          <div className='border border-red-500'></div>
+          <div className='border border-red-500'>
+
+          </div>
           {/* Middle  Content */}
           <div className="space-y-6 border border-red-500">
             <h1 className='text-neutral-100'>FM Linktree</h1>
@@ -78,9 +81,9 @@ export default function Draft() {
         ].map((links, index) => (
           <div className="space-y-2" key={index}>
             <h3>{links.title}</h3>
-            <div className="grid md:grid-cols-3 grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-3 grid-cols-2 gap-2">
               {links.data.map((card, index) => (
-                <Card key={index} title={card.title} status={card.status} link={card.link} logo={card.logo} styles={card.styles} />
+                <LightCard key={index} title={card.title} status={card.status} link={card.link} logo={card.logo} styles={card.styles} />
               ))}
             </div>
           </div>
