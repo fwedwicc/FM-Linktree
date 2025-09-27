@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { FMLogo, FrederickMoreno } from '@/assets'
 import { BuyMeACoffee } from '@/assets'
 import { Cursor } from "@/components/Cursor"
-import { LightCard } from "@/components/LightCard"
+import { Card } from "@/components/draft/Card"
 import { Ball } from "@/components/Ball"
 import { Select } from "@/components/Select"
 import { Links } from "@/constants/data"
@@ -20,15 +20,15 @@ export default function Draft() {
       <Cursor />
       <Ball />
       {/* Hero Section */}
-      <div className="p-2 lg:h-screen h-[70vh] border border-red-500">
+      <div className="p-2 lg:h-screen h-[70vh]">
         <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-3xl p-1.5'>
 
           {/* Header */}
-          <div className='border border-red-500'>
+          <div className=''>
 
           </div>
           {/* Middle  Content */}
-          <div className="space-y-6 border border-red-500">
+          <div className="space-y-6">
             <h1 className='text-neutral-100'>FM Linktree</h1>
             <div className="border-y border-dashed border-neutral-800 py-4 space-y-6">
               <div className='flex items-start gap-3'>
@@ -83,7 +83,7 @@ export default function Draft() {
             <h3>{links.title}</h3>
             <div className="grid md:grid-cols-3 grid-cols-2 gap-2">
               {links.data.map((card, index) => (
-                <LightCard key={index} title={card.title} status={card.status} link={card.link} logo={card.logo} styles={card.styles} />
+                <Card key={index} title={card.title} status={card.status} link={card.link} logo={card.logo} styles={card.styles} />
               ))}
             </div>
           </div>
