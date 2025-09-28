@@ -1,6 +1,7 @@
 'use client'
 import './styles.css'
 import React, { useState } from 'react'
+import { TbFlareFilled } from "react-icons/tb"
 import Image from 'next/image'
 import { FMLogo, FrederickMoreno } from '@/assets'
 import { BuyMeACoffee } from '@/assets'
@@ -20,55 +21,68 @@ export default function Draft() {
       <Cursor />
       <Ball />
       {/* Hero Section */}
-      <div className="p-2 lg:h-screen h-[70vh]">
-        <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-3xl p-1.5'>
+      <div className="p-7 pr-0 lg:h-screen h-[70vh]">
+        <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-[26px] p-10'>
 
           {/* Header */}
-          <div className=''>
+          <header className=''>
 
-          </div>
+          </header>
+
           {/* Middle  Content */}
-          <div className="space-y-6">
-            <h1 className='text-neutral-100'>FM Linktree</h1>
-            <div className="border-y border-dashed border-neutral-800 py-4 space-y-6">
-              <div className='flex items-start gap-3'>
-                <Image
-                  className="mt-2 size-8 border-2 ring-2 ring-indigo-400 border-neutral-950 rounded-full"
-                  src={FrederickMoreno}
-                  alt="Frederick Moreno"
-                />
-                <div>
-                  <h4 className='text-neutral-100'>Frederick Moreno</h4>
-                  <p className='text-neutral-400 leading-none text-xs'>Frontend • UI/UX</p>
+          <section className="space-y-6">
+            <h1>FM Linktree</h1>
+            <div className="flex">
+              <div className='flex items-center gap-6'>
+                {/* Profile */}
+                <div className='relative size-[5.9rem] rounded-3xl bg-white overflow-hidden'>
+                  <Image
+                    className="object-cover size-full opacity-0"
+                    src={FrederickMoreno}
+                    alt="Frederick Moreno"
+                  />
+                </div>
+                {/* Content */}
+                <div className='space-y-3'>
+                  <div className='space-y-1'>
+                    <h5 className='text-white'>Frederick Moreno</h5>
+                    <p className='flex items-center gap-2 text-neutral-300'>
+                      frontend
+                      <TbFlareFilled className='size-2' />
+                      ui/ux
+                      <TbFlareFilled className='size-2' />
+                      graphics
+                    </p>
+                  </div>
+                  <div className='flex items-center gap-3 border border-neutral-800 rounded-full p-[3px] pe-4'>
+                    <div className='size-7 rounded-full border border-neutral-800'></div>
+                    <p className='text-neutral-100'>
+                      Currently eating noodles
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className='flex items-start justify-between flex-wrap-reverse gap-1'>
-                <button onClick={null} className='flex items-center text-indigo-400 text-xs underline'>Drop me a line
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shrink-0 mt-[1.7px] size-3.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </button>
-                <a href='https://fwedwicc.github.io/FM-Portfolio/' target='_blank' rel='noopener noreferrer' className='flex items-center text-indigo-400 text-xs underline'>FM Portfolio
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shrink-0 mt-[1.7px] size-3.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                </a>
-              </div>
             </div>
-          </div>
+          </section>
 
           {/* Footer */}
-          <div className='flex justify-between items-center p-1 pl-5 border border-neutral-600 rounded-[17px]'>
-            <p className='text-xs text-neutral-800'>FM • {currentYear}</p>
-            <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-2 text-neutral-200 text-xs rounded-[12px] bg-neutral-900 p-2 transition duration-300 ease-in-out'>
-              <Image
-                className="h-6 w-auto rounded-[5px]"
-                src={BuyMeACoffee}
-                alt="Buy Me A Coffee"
-              />
+          <footer className='flex justify-between items-end'>
+            <p className='flex items-center gap-2 text-neutral-300'>
+              fm
+              <TbFlareFilled className='size-2' />
+              {currentYear}
+            </p>
+            <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-3 bg-neutral-800 text-neutral-50 rounded-full text-[11px] p-[4px] pe-4 transition duration-300 ease-in-out'>
+              <div className='size-8 rounded-full overflow-hidden'>
+                <Image
+                  className="object-cover size-full"
+                  src={BuyMeACoffee}
+                  alt="Buy Me A Coffee"
+                />
+              </div>
               Buy me a coffee
             </a>
-          </div>
+          </footer>
 
         </div>
       </div>

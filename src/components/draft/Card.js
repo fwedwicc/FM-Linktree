@@ -5,7 +5,7 @@ export function Card(props) {
 
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer"
-      className={`${props.styles} relative group flex items-center md:gap-4 gap-2.5 p-3 rounded-[19px] bg-neutral-200/50 text-neutral-700 transition-all duration-300 ease-in-out`}
+      className={`${props.styles} relative group flex items-center md:gap-4 gap-2.5 p-3 rounded-[19px] bg-[#F9F9F9] hover:bg-white text-neutral-700 transition-all duration-300 ease-in-out`}
     >
       {/* <div className='size-2 rounded-full bg-neutral-200 top-0 right-0 opacity-0 group-hover:opacity-100 absolute transition duration-300 ease-in-out'></div> */}
       <Image
