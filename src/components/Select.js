@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { TbChevronDown } from "react-icons/tb"
 
-const Select = ({ id, label, required, styles, inputStyles, options = [], placeholder = "Choose", value, onChange }) => {
+export function Select({ id, label, required, styles, inputStyles, options = [], placeholder = "Choose", value, onChange }) {
   const [isOpen, setIsOpen] = useState(false)
   const selectRef = useRef(null)
 
@@ -77,5 +77,3 @@ const Select = ({ id, label, required, styles, inputStyles, options = [], placeh
     </fieldset>
   )
 }
-
-export default Select

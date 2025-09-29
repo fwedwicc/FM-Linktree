@@ -11,10 +11,23 @@ import { Ball } from "@/components/Ball"
 import { Select } from "@/components/Select"
 import { Links } from "@/constants/data"
 import emailjs from '@emailjs/browser'
+import { useRouter } from "next/navigation"
 
 export default function Draft() {
 
   const currentYear = new Date().getFullYear()
+  const [size, setSize] = useState("v2"); // default is "/"
+  const router = useRouter();
+
+  const handleChange = (val) => {
+    setSize(val);
+    if (val === "v1") {
+      window.location.href = "https://fm-linktree.vercel.app/v1";
+    } else {
+      window.location.href = "https://fm-linktree.vercel.app/";
+    }
+  };
+
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
@@ -26,7 +39,13 @@ export default function Draft() {
 
           {/* Header */}
           <header className=''>
-
+            <Select
+              id="size"
+              options={["v1", "v2"]}
+              value={size}
+              styles="max-w-[10rem] w-full"
+              onChange={handleChange}
+            />
           </header>
 
           {/* Middle  Content */}
