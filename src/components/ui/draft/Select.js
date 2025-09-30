@@ -41,7 +41,7 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
         className={`${inputStyles} w-full flex justify-between items-center gap-2 px-3 py-2 text-sm border border-neutral-200 bg-neutral-100/40 rounded-[11px] focus:outline-none focus:ring-[3px] focus:ring-violet-200/50 focus:border-violet-300/70 transition duration-300 ease-in-out cursor-pointer`}
       >
         <p>{value || placeholder}</p>
-        <TbChevronDown className={`transition-smooth ${isOpen ? "rotate-180" : ''}`} />
+        <TbChevronDown className={`transition-all duration-300 ease-in-out ${isOpen ? "rotate-180" : ''}`} />
       </button>
       {/* Dropdown Options */}
       <AnimatePresence>
@@ -51,15 +51,15 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 270, damping: 14, bounce: 0.45 }}
-            className="space-y-0.5 absolute w-full mt-18 bg-white border border-neutral-200/50 rounded-[12px] p-1 shadow-xl shadow-neutral-400/10 z-10"
+            className="space-y-0.5 absolute w-full mt-[40px] bg-white border border-neutral-200/50 rounded-[12px] p-1 shadow-xl shadow-neutral-400/10 z-10"
           >
-            <button
+            {/* <button
               type="button"
               disabled
               className="w-full text-left px-2.5 py-1.5 rounded-lg text-sm font-medium cursor-pointer transition-smooth text-neutral-800 disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Choose
-            </button>
+            </button> */}
             {options.map((option) => (
               <button
                 key={option}

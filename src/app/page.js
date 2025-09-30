@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { FMLogo, FrederickMoreno } from '@/assets'
 import { BuyMeACoffee } from '@/assets'
-import { Cursor } from "@/components/Cursor"
-import { Card } from "@/components/Card"
-import { Ball } from "@/components/Ball"
+import { Cursor } from "@/components/ui/v1/Cursor"
+import { Card } from "@/components/ui/v1"
+import { Ball } from "@/components/ui/v1/Ball"
 import { Links } from "@/constants/data"
 import emailjs from '@emailjs/browser'
 

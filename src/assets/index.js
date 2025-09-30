@@ -1,4 +1,5 @@
 import FrederickMoreno from './frederick-moreno-1x1.png'
+import FMNotion from './fm-notion.png'
 import FMLogo from './FM-logo.png'
 import FMPortfolio from './fm-portfolio-logo.png'
 import LinkedIn from './linkedin-logo.png'
@@ -28,6 +29,7 @@ import BuyMeACoffee from './buy-me-a-coffee-logo.png'
 
 export {
   FrederickMoreno,
+  FMNotion,
   FMLogo,
   FMPortfolio,
   LinkedIn,
