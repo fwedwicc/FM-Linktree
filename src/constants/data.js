@@ -1,6 +1,6 @@
 import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
 
-export const Links = {
+export const linksData = {
   profession: [
     {
       link: 'https://www.linkedin.com/in/frederick-moreno/',

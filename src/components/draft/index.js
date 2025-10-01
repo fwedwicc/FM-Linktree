@@ -1,9 +1,11 @@
 import { Header } from './Header'
-import { Footer } from './Footer'
 import { Hero } from './Hero'
+import { Footer } from './Footer'
+import { Links } from './Links'
 
 export {
   Header,
+  Hero,
   Footer,
-  Hero
+  Links
 }
