@@ -6,7 +6,7 @@ import { BuyMeACoffee } from '@/assets'
 import { Cursor } from "@/components/ui/v1/Cursor"
 import { Card } from "@/components/ui/v1"
 import { Ball } from "@/components/ui/v1/Ball"
-import { Links } from "@/constants/data"
+import { linksData } from "@/constants/data"
 import emailjs from '@emailjs/browser'
 
 export default function Home() {
@@ -295,9 +295,9 @@ export default function Home() {
       {/* Links Section */}
       <div className="md:p-8 p-5 md:space-y-8 space-y-6 md:h-screen h-auto overflow-auto custom-scrollbar">
         {[
-          { title: "Professions / Socials", data: Links.profession },
-          { title: "Live Sites", data: Links.sites },
-          { title: "Other Profiles", data: Links.courses },
+          { title: "Professions / Socials", data: linksData.profession },
+          { title: "Live Sites", data: linksData.sites },
+          { title: "Other Profiles", data: linksData.courses },
         ].map((links, index) => (
           <div className="space-y-2" key={index}>
             <h3>{links.title}</h3>
