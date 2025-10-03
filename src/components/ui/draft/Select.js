@@ -38,7 +38,7 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`${inputStyles} w-full flex justify-between items-center gap-2 px-3 py-2 text-sm border border-neutral-200 bg-neutral-100/40 rounded-[11px] focus:outline-none focus:ring-[3px] focus:ring-violet-200/50 focus:border-violet-300/70 transition duration-300 ease-in-out cursor-pointer`}
+        className={`${inputStyles} w-full flex justify-between items-center gap-2 px-3 py-2 text-sm text-neutral-100 border border-neutral-700 bg-neutral-800 rounded-[11px] focus:outline-none focus:ring-[3px] focus:ring-neutral-500/50 focus:border-neutral-600/70 transition duration-300 ease-in-out cursor-pointer`}
       >
         <p>{value || placeholder}</p>
         <TbChevronDown className={`transition-all duration-300 ease-in-out ${isOpen ? "rotate-180" : ''}`} />
@@ -51,12 +51,12 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 270, damping: 14, bounce: 0.45 }}
-            className="space-y-0.5 absolute w-full mt-[40px] bg-white border border-neutral-200/50 rounded-[12px] p-1 shadow-xl shadow-neutral-400/10 z-10"
+            className="space-y-0.5 absolute w-full mt-[40px] bg-neutral-900 border border-neutral-700 rounded-[12px] p-1 shadow-xl shadow-neutral-900/10 z-10"
           >
             {/* <button
               type="button"
               disabled
-              className="w-full text-left px-2.5 py-1.5 rounded-lg text-sm font-medium cursor-pointer transition-smooth text-neutral-800 disabled:opacity-40 disabled:cursor-not-allowed"
+              className="w-full text-left px-2.5 py-1.5 rounded-lg text-sm font-medium cursor-pointer transition duration-300 ease-in-out text-neutral-800 disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Choose
             </button> */}
@@ -65,8 +65,8 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
                 key={option}
                 type="button"
                 onClick={() => handleSelect(option)}
-                className={`w-full text-left px-2.5 py-1.5 rounded-lg text-sm font-medium cursor-pointer transition-smooth text-neutral-800
-              ${value === option ? "bg-neutral-200/50" : "hover:bg-neutral-200/50"}`}
+                className={`w-full text-left px-2.5 py-1 rounded-lg text-xs text-neutral-100 font-medium cursor-pointer transition duration-300 ease-in-out
+              ${value === option ? "bg-neutral-700/50" : "hover:bg-neutral-700/50"}`}
               >
                 {option}
               </button>

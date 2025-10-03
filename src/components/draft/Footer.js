@@ -8,7 +8,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className='flex justify-between items-end'>
+    <footer className='flex justify-between items-end z-50 relative'>
       <p className='flex items-center gap-2 text-neutral-300'>
         fm
         <TbFlareFilled className='size-2' />

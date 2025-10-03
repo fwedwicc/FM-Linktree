@@ -6,7 +6,7 @@ import { TbFlareFilled } from "react-icons/tb"
 export function Hero() {
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 z-50 relative">
       <h1>FM Linktree</h1>
       <div className="flex">
         <div className='flex items-center gap-6'>

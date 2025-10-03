@@ -9,7 +9,8 @@ export default function Draft() {
     <main className="min-h-screen grid lg:grid-cols-2 grid-cols-1">
       {/* Hero Section */}
       <section className="p-7 pr-0 lg:h-screen h-[70vh]">
-        <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-[26px] p-10'>
+        <div className='relative flex flex-col h-full justify-between bg-neutral-900 rounded-[26px] p-10 overflow-hidden'>
+          <div className='absolute w-[45rem] h-[30rem] rounded-full blur-3xl bg-neutral-800/60 top-[-8rem] right-[-8rem] z-10' />
           <Header />
           <Hero />
           <Footer />

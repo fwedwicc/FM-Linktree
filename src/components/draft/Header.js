@@ -20,11 +20,11 @@ export function Header() {
   }
 
   return (
-    <header className='flex items-start justify-between'>
-      <div className='flex items-center gap-3'>
+    <header className='flex items-start justify-between z-50 relative'>
+      <div className='flex items-center gap-4'>
         <a href='https://fwedwicc.github.io/FM-Portfolio/' target='_blank' rel='noopener noreferrer' >
           <Image
-            className="md:w-7 w-6 h-auto"
+            className="w-5 h-auto"
             src={FMLogo}
             alt="FM Logo"
           />
@@ -33,11 +33,11 @@ export function Header() {
           id="size"
           options={["v1", "v2"]}
           value={version}
-          styles="max-w-[10rem] w-full"
+          styles="w-auto"
           onChange={handleChange}
         />
       </div>
-      <button className='inline-flex items-center gap-3 bg-neutral-100 text-neutral-900 rounded-full font-medium leading-none text-[11px] px-4 py-[12px] transition duration-300 ease-in-out'>
+      <button className='inline-flex items-center gap-3 bg-neutral-100 text-neutral-900 rounded-full font-semibold leading-none text-[11px] px-4 py-[12px] transition duration-300 ease-in-out'>
         Drop me a line
       </button>
     </header>
