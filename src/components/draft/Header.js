@@ -37,7 +37,7 @@ export function Header() {
           onChange={handleChange}
         />
       </div>
-      <button className='inline-flex items-center gap-3 bg-neutral-100 text-neutral-900 rounded-full font-semibold leading-none text-[11px] px-4 py-[12px] transition duration-300 ease-in-out'>
+      <button className='inline-flex items-center gap-3 bg-neutral-100 text-neutral-900 rounded-[13px] font-semibold leading-none text-[11px] px-3.5 py-[12px] transition duration-300 ease-in-out'>
         Drop me a line
       </button>
     </header>
