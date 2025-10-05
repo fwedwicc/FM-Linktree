@@ -7,35 +7,35 @@ export const linksData = {
       logo: LinkedIn,
       title: "LinkedIn",
       status: "Active",
-      styles: "hover:bg-blue-500/20 hover:border-blue-500/50"
+      styles: "hover:bg-blue-500/10 hover:border-blue-500/30"
     },
     {
       link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
       logo: Upwork,
       title: "Upwork",
       status: "Inactive",
-      styles: "hover:bg-green-700/20 hover:border-green-700/70"
+      styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
       link: 'https://github.com/fwedwicc',
       logo: GitHub,
       title: "GitHub",
       status: "Active",
-      styles: "hover:bg-green-700/20 hover:border-green-700/70"
+      styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
       link: 'https://www.behance.net/fwedwicc',
       logo: Behance,
       title: "Behance",
       status: "Active",
-      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+      styles: "hover:bg-blue-700/10 hover:border-blue-700/30"
     },
     {
       link: 'https://dribbble.com/fwedwic',
       logo: Dribbble,
       title: "Dribbble",
       status: "Active",
-      styles: "hover:bg-pink-500/10 hover:border-pink-500/50"
+      styles: "hover:bg-pink-500/10 hover:border-pink-500/30"
     },
     {
       link: 'https://www.tiktok.com/@fwedwicc',
@@ -49,7 +49,7 @@ export const linksData = {
       logo: Instagram,
       title: "Instagram",
       status: "Inactive",
-      styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
+      styles: "hover:bg-rose-500/10 hover:border-rose-500/30"
     },
     {
       link: 'https://web.facebook.com/fwedwic?_rdc=1&_rdr',

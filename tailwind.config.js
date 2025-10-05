@@ -18,24 +18,24 @@ module.exports = {
     'hover:bg-indigo-700/20',
     'hover:border-indigo-700/70',
     // LinkedIn
-    'hover:bg-blue-500/20',
-    'hover:border-blue-500/50',
+    'hover:bg-blue-500/10',
+    'hover:border-blue-500/30',
     // profolios
     'hover:bg-stone-500/10',
     'hover:border-stone-500/50',
     // Dribbble
     'hover:bg-pink-500/10',
-    'hover:border-pink-500/50',
+    'hover:border-pink-500/30',
     // Behance & Facebook
-    'hover:bg-blue-700/20',
-    'hover:border-blue-700/70',
+    'hover:bg-blue-700/10',
+    'hover:border-blue-700/30',
     // Instagram
     'hover:bg-rose-500/10',
-    'hover:border-rose-500/50',
+    'hover:border-rose-500/30',
 
     // GitHub & Tech-Commr & FM DailyUI S1
-    'hover:bg-green-700/20',
-    'hover:border-green-700/70',
+    'hover:bg-green-500/10',
+    'hover:border-green-500/30',
     // fmUI & FM Gallery
     'hover:bg-neutral-500/10',
     'hover:border-neutral-500/50',

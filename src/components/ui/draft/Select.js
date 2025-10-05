@@ -38,7 +38,7 @@ export function Select({ id, label, required, styles, inputStyles, options = [],
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`${inputStyles} w-full flex justify-between items-center gap-2 px-3 py-2 text-sm text-neutral-100 border border-neutral-800 bg-neutral-800/50 rounded-[11px] focus:outline-none focus:ring-[3px] focus:ring-neutral-600/50 focus:border-neutral-600/70 transition duration-300 ease-in-out cursor-pointer`}
+        className={`${inputStyles} w-full flex justify-between items-center gap-2 px-3 py-2 text-sm text-neutral-100 border border-neutral-800 bg-neutral-800/50 rounded-[11px] focus:outline-none focus:ring-[3px] focus:ring-neutral-700/50 focus:border-neutral-700/70 transition duration-300 ease-in-out cursor-pointer`}
       >
         <p>{value || placeholder}</p>
         <TbChevronDown className={`transition-all duration-300 ease-in-out ${isOpen ? "rotate-180" : ''}`} />

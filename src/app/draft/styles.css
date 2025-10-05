@@ -20,7 +20,7 @@
     font-style: normal;
   }
   h3 {
-    @apply text-neutral-950 text-2xl font-medium;
+    @apply text-neutral-100 text-2xl font-medium;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
