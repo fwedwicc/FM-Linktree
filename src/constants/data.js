@@ -42,7 +42,7 @@ export const linksData = {
       logo: TikTok,
       title: "TikTok",
       status: "Inactive",
-      styles: "hover:bg-rose-500/10 hover:border-rose-500/50"
+      styles: "hover:bg-rose-500/10 hover:border-rose-500/30"
     },
     {
       link: 'https://www.instagram.com/freefinnn',
@@ -56,7 +56,7 @@ export const linksData = {
       logo: Facebook,
       title: "Facebook",
       status: "Active",
-      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+      styles: "hover:bg-blue-700/10 hover:border-blue-700/30"
     },
   ],
   sites: [
@@ -65,91 +65,91 @@ export const linksData = {
       logo: FMPortfolio,
       title: "FM Portfolio",
       status: "Finished",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
     },
     {
       link: 'https://tech-commr.vercel.app/',
       logo: TechCommr,
       title: "Tech-Commr",
       status: "Finished",
-      styles: "hover:bg-green-700/20 hover:border-green-700/70"
+      styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
       link: 'https://undecide.dev/',
       logo: Undecide,
       title: "Undecide",
       status: "On going",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://iconv.vercel.app/',
       logo: iConv,
       title: "iConv",
       status: "Finished",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://rebyuwer.vercel.app/',
       logo: Vite,
       title: "Rebyuwer",
       status: "Finished",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
     },
     {
       link: 'https://fwedwicc.github.io/fmUI/',
       logo: FMNeutral,
       title: "fmUI",
       status: "In progress",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://fm-dump.vercel.app/',
       logo: FMDark,
       title: "fmDump",
       status: "On going",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://fwedwicc.github.io/FM-DailyUI/',
       logo: FMNeutral,
       title: "FM DailyUI S1",
       status: "Finished",
-      styles: "hover:bg-green-700/20 hover:border-green-700/70"
+      styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
       link: 'https://fwedwicc.github.io/FM-DailyUI-S2/',
       logo: FMGray,
       title: "FM DailyUI S2",
       status: "On going",
-      styles: "hover:bg-indigo-700/20 hover:border-indigo-700/70"
+      styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
     },
     {
       link: 'https://fwedwicc.github.io/FM-Gallery/',
       logo: FMNeutral,
       title: "FM Gallery",
       status: "Finished",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/50"
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://quack-overflow.vercel.app/',
       logo: quackOverflow,
       title: "quackOverflow",
       status: "Finished",
-      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
     {
       link: 'https://profolios-fm.vercel.app/',
       logo: profolios,
       title: "profolios",
       status: "In progress",
-      styles: "hover:bg-stone-500/10 hover:border-stone-500/50"
+      styles: "hover:bg-stone-500/10 hover:border-stone-500/30"
     },
     {
       link: 'https://pixelore.vercel.app/',
       logo: pixelore,
       title: "pixelore",
       status: "In progress",
-      styles: "hover:bg-yellow-600/10 hover:border-yellow-600/50"
+      styles: "hover:bg-yellow-600/10 hover:border-yellow-600/30"
     },
   ],
   courses: [
@@ -158,14 +158,14 @@ export const linksData = {
       logo: Codedex,
       title: "Codédex",
       status: "Inactive",
-      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/50"
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
     {
       link: 'https://codepen.io/fwedwicc',
       logo: Codepen,
       title: "Codepen",
       status: "Inactive",
-      styles: "hover:bg-sky-500/10 hover:border-sky-500/50"
+      styles: "hover:bg-sky-500/10 hover:border-sky-500/30"
     },
     {
       link: 'https://www.freecodecamp.org/fwedwic',
@@ -179,7 +179,7 @@ export const linksData = {
       logo: FrontendMentor,
       title: "Frontend Mentor",
       status: "Inactive",
-      styles: "hover:bg-blue-700/20 hover:border-blue-700/70"
+      styles: "hover:bg-blue-700/10 hover:border-blue-700/30"
     }
   ]
 }
