@@ -52,3 +52,7 @@
 .invisible-scrollbar::-webkit-scrollbar-thumb {
   @apply rounded-sm bg-transparent;
 }
+
+.input {
+  @apply px-3.5 py-2.5 text-xs bg-neutral-800/20 border border-neutral-700/30 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-[3px] focus:ring-neutral-600/10 focus:border-neutral-700/40 transition duration-300 ease-in-out;
+}
