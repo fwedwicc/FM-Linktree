@@ -2,7 +2,7 @@
 import './styles.css'
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Header, Hero, Footer, Links } from "@/components/draft"
+import { Header, Hero, Footer, Links, ContactForm } from "@/components/draft"
 import { Loader } from "@/components/ui/draft"
 
 export default function Draft() {
@@ -40,6 +40,7 @@ export default function Draft() {
           {/* Hero Section */}
           <section className="p-4 pr-0 lg:h-screen h-[70vh]">
             <div className='relative flex flex-col h-full justify-between bg-neutral-950/20 border border-neutral-800/50 rounded-[28px] p-10 overflow-hidden'>
+              <ContactForm />
               <Header />
               <Hero />
               <Footer />
