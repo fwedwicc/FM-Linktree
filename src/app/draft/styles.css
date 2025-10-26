@@ -30,6 +30,15 @@
   }
 }
 
+/* ------------------------ GSAP Text Animation Styles ------------------------ */
+.split-parent {
+  overflow: hidden;
+}
+
+.split-child {
+  display: inline-block;
+}
+
 /* ------------------------ Scrollbar Styles ------------------------ */
 .custom-scrollbar {
   overflow-y: auto;

@@ -5,7 +5,7 @@ export const useFormStore = create((set) => ({
   // modal states
   isModalOpen: false,
   openModal: () => set({ isModalOpen: true }),
-  closeModal: () => set({ isModalOpen: false }),
+  closeModal: () => set({ isModalOpen: false, }),
 
   // form data
   formData: {

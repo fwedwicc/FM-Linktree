@@ -1,17 +1,28 @@
 'use client'
 import { TbFlareFilled, TbX } from "react-icons/tb"
-import Image from "next/image"
-import { BuyMeACoffee } from "@/assets"
 import { useFormStore } from '@/store/useFormStore'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTextAnimation } from "@/hooks"
 
 export function ContactForm() {
-  const { isModalOpen, closeModal, formData, updateFormData } = useFormStore()
+  const { isModalOpen, closeModal, formData, updateFormData, resetForm } = useFormStore()
+  const headingRef = useTextAnimation({
+    delay: 0.2,
+    stagger: 0.12,
+    trigger: isModalOpen
+  })
 
   const handleSubmit = (e) => {
     e.preventDefault()
     // temp
     console.log('Form submitted:', formData)
+    resetForm()
+  }
+
+  const handleClose = (e) => {
+    e.preventDefault()
+    resetForm()
+    closeModal()
   }
 
   return (
@@ -24,7 +35,7 @@ export function ContactForm() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            onClick={closeModal}
+            onClick={handleClose}
             className="absolute inset-0 bg-neutral-950/20 backdrop-blur-sm z-40 rounded-[28px]"
           />
 
@@ -46,24 +57,18 @@ export function ContactForm() {
             <div className="bg-neutral-900 border border-neutral-800/50 rounded-[18px] p-6 w-full">
               {/* Form content */}
               <form onSubmit={handleSubmit} className="flex items-start gap-8">
-                {/* <div className="w-full max-w-[12rem] space-y-6">
-                  <h3>Drop me a line</h3>
-                  <p className="text-xs text-neutral-400 px-4 py-2.5 rounded-xl bg-neutral-800/40">
-                    I'll get back to you as soon as possible. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qusit amet consectetur adipisicing elit.
-                  </p>
-                </div> */}
                 <div className="flex flex-col w-full gap-6">
                   {/* Close button */}
                   <div className="flex items-start justify-between">
                     <div className='space-y-1'>
-                      <h3>Drop me a line</h3>
+                      <h3 ref={headingRef} className="overflow-hidden">Drop me a line</h3>
                       <p className="text-xs text-neutral-400">
                         I'll get back to you via email :)
                       </p>
                     </div>
                     <button
-                      onClick={closeModal}
-                      className="size-8 flex items-center justify-center bg-neutral-800/20 rounded-lg"
+                      onClick={handleClose}
+                      className="size-8 flex items-center justify-center bg-neutral-800/20 hover:bg-neutral-800/30 transition duration-300 ease-in-out rounded-lg"
                       aria-label="Close modal"
                     >
                       <TbX className="size-4" />
@@ -107,7 +112,7 @@ export function ContactForm() {
                   <div className="flex items-end justify-end gap-3 col-span-full">
                     <button
                       type="submit"
-                      className="flex items-center gap-3 bg-neutral-100 text-neutral-900 rounded-[13px] font-semibold leading-none text-[11px] px-3.5 py-[12px] transition duration-300 ease-in-out"
+                      className="flex items-center gap-3 bg-neutral-100 hover:bg-white text-neutral-900 rounded-[13px] font-semibold leading-none text-[11px] px-3.5 py-[12px] transition duration-300 ease-in-out"
                     >
                       Send inquiry
                     </button>

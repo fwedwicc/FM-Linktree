@@ -14,7 +14,7 @@ export function Footer() {
         <TbFlareFilled className='size-2' />
         {currentYear}
       </p>
-      <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-3 bg-neutral-800/50 border border-neutral-800 text-neutral-50 rounded-[13px] text-[11px] p-[4px] pe-4 transition duration-300 ease-in-out'>
+      <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-3 bg-neutral-800/50 hover:bg-neutral-800/70 border border-neutral-800 text-neutral-50 rounded-[13px] text-[11px] p-[4px] pe-4 transition duration-300 ease-in-out'>
         <div className='size-[31px] rounded-[9px] overflow-hidden'>
           <Image
             className="object-cover size-full"

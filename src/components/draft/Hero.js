@@ -2,12 +2,14 @@
 import Image from "next/image"
 import { FMNotion } from "@/assets"
 import { TbFlareFilled } from "react-icons/tb"
+import { useTextAnimation } from "@/hooks"
 
 export function Hero() {
+  const headingRef = useTextAnimation()
 
   return (
     <section className="space-y-6 z-30 relative">
-      <h1>FM Linktree</h1>
+      <h1 ref={headingRef} className="overflow-hidden">FM Linktree</h1>
       <div className="flex">
         <div className='flex items-center gap-6'>
           {/* Profile */}
