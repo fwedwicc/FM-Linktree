@@ -1,5 +1,5 @@
 'use client'
-import { Select } from "../ui/draft/Select"
+import { Select } from "../ui/v2/Select"
 import { useState } from "react"
 import { FMLogo } from "@/assets"
 import Image from "next/image"

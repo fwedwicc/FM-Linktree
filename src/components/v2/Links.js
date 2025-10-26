@@ -1,5 +1,5 @@
 'use client'
-import { Card } from "@/components/ui/draft"
+import { Card } from "@/components/ui/v2"
 import { linksData } from "@/constants/data"
 import { useTextAnimation } from "@/hooks"
 

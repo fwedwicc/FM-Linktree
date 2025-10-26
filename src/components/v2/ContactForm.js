@@ -5,16 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTextAnimation } from "@/hooks"
 
 export function ContactForm() {
-  const {
-    isModalOpen,
-    closeModal,
-    formData,
-    updateFormData,
-    resetForm,
-    submitForm,
-    errors,
-    isSubmitting
-  } = useFormStore()
+  const { isModalOpen, closeModal, formData, updateFormData, resetForm, submitForm, errors, isSubmitting } = useFormStore()
 
   const headingRef = useTextAnimation({
     delay: 0.2,
@@ -71,7 +62,7 @@ export function ContactForm() {
                     <div className='md:space-y-1 -space-y-1'>
                       <h3 ref={headingRef} className="overflow-hidden">Drop me a line</h3>
                       <p className="text-xs text-neutral-400">
-                        I'll get back to you via email :)
+                        I&apos;ll get back to you via email :)
                       </p>
                     </div>
                     <button

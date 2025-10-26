@@ -78,12 +78,9 @@ export const useFormStore = create((set, get) => ({
 
       set({ isSubmitting: false })
 
+      resetForm()
+      closeModal()
       toast.success('Message sent successfully :)')
-
-      setTimeout(() => {
-        resetForm()
-        closeModal()
-      }, 500)
 
       return true
     } catch (error) {

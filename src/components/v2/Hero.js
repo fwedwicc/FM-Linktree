@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section className="space-y-6 z-30 relative">
-      <h1 ref={headingRef} className="overflow-hidden">FM Linktree</h1>
+      <h1 ref={headingRef} className="overflow-hidden leading-none">FM Linktree</h1>
       <div className="flex">
         <div className='flex items-center md:gap-6 gap-4'>
           {/* Profile */}
