@@ -62,13 +62,13 @@ export function ContactForm() {
             className="absolute top-0 left-0 right-0 z-50 p-2"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-neutral-900 border border-neutral-800/50 rounded-[18px] p-6 w-full">
+            <div className="bg-neutral-900 border border-neutral-800/50 rounded-[18px] md:p-6 p-3 w-full">
               {/* Form content */}
               <form onSubmit={handleSubmit} className="flex items-start gap-8">
                 <div className="flex flex-col w-full gap-6">
                   {/* Close button */}
                   <div className="flex items-start justify-between">
-                    <div className='space-y-1'>
+                    <div className='md:space-y-1 -space-y-1'>
                       <h3 ref={headingRef} className="overflow-hidden">Drop me a line</h3>
                       <p className="text-xs text-neutral-400">
                         I'll get back to you via email :)
@@ -82,10 +82,10 @@ export function ContactForm() {
                       <TbX className="size-4" />
                     </button>
                   </div>
-                  <div className='grid grid-cols-2 gap-3'>
+                  <div className='grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-2'>
                     {/* name */}
                     <fieldset className='w-full space-y-1'>
-                      <label htmlFor="name" className='text-sm'>Name</label>
+                      <label htmlFor="name" className='md:text-sm text-xs'>Name</label>
                       <input
                         id="name"
                         type="text"
@@ -96,12 +96,12 @@ export function ContactForm() {
                         disabled={isSubmitting}
                       />
                       {errors.name && (
-                        <p className="text-red-400 text-[10px] pt-1.5">{errors.name}</p>
+                        <p className="text-red-400 text-[10px] md:pt-1.5 pt-1">{errors.name}</p>
                       )}
                     </fieldset>
                     {/* email */}
                     <fieldset className='w-full space-y-1'>
-                      <label htmlFor="email" className='text-sm'>Email</label>
+                      <label htmlFor="email" className='md:text-sm text-xs'>Email</label>
                       <input
                         id="email"
                         type="text"
@@ -112,12 +112,12 @@ export function ContactForm() {
                         disabled={isSubmitting}
                       />
                       {errors.email && (
-                        <p className="text-red-400 text-[10px] pt-1.5">{errors.email}</p>
+                        <p className="text-red-400 text-[10px] md:pt-1.5 pt-1">{errors.email}</p>
                       )}
                     </fieldset>
                     {/* message */}
                     <fieldset className='w-full space-y-1 col-span-full'>
-                      <label htmlFor="message" className='text-sm'>Message</label>
+                      <label htmlFor="message" className='md:text-sm text-xs'>Message</label>
                       <textarea
                         id="message"
                         placeholder="Your message"
@@ -128,7 +128,7 @@ export function ContactForm() {
                         disabled={isSubmitting}
                       />
                       {errors.message && (
-                        <p className="text-red-400 text-[10px] pt-1.5">{errors.message}</p>
+                        <p className="text-red-400 text-[10px] md:pt-1.5 pt-0">{errors.message}</p>
                       )}
                     </fieldset>
                   </div>

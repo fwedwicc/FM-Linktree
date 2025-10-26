@@ -15,7 +15,7 @@ export default function Draft() {
     >
       {/* Hero Section */}
       <section className="lg:p-4 p-2 lg:pr-0 pr-2 lg:h-screen h-[70vh]">
-        <div className='relative flex flex-col h-full justify-between bg-neutral-950/20 border border-neutral-800/50 rounded-[28px] p-10 overflow-hidden'>
+        <div className='relative flex flex-col h-full justify-between bg-neutral-950/20 border border-neutral-800/50 rounded-[28px] md:p-10 p-5 overflow-hidden'>
           <Toaster
             position="top-center"
             containerStyle={{
@@ -25,11 +25,11 @@ export default function Draft() {
               success: {
                 duration: 3000,
                 style: {
-                  background: '#262626',
+                  background: '#1d1d1d',
                   color: '#fff',
-                  border: '1px solid #404040',
+                  border: '1px solid #252525',
                   borderRadius: '14px',
-                  padding: '12px 16px',
+                  padding: '10px 14px',
                   fontSize: '13px',
                 },
                 iconTheme: {

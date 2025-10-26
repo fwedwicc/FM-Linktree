@@ -1,22 +1,8 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
-
-/**
- * Custom hook for GSAP text animation
- * Splits text into words and animates them from below
- * 
- * @param {Object} options - Animation options
- * @param {number} options.duration - Animation duration (default: 1.5)
- * @param {number} options.yPercent - Y offset percentage (default: 100)
- * @param {string} options.ease - GSAP easing function (default: "power4")
- * @param {number} options.stagger - Stagger delay between words (default: 0.1)
- * @param {number} options.delay - Initial delay before animation starts (default: 0)
- * @param {any} options.trigger - Optional dependency to re-trigger animation
- * @returns {React.RefObject} - Ref to attach to the text element
- */
 export function useTextAnimation(options = {}) {
   const {
-    duration = 1.5,
+    duration = 1,
     yPercent = 100,
     ease = "power4",
     stagger = 0.1,

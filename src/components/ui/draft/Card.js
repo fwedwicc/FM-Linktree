@@ -5,10 +5,10 @@ export function Card(props) {
 
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer"
-      className={`${props.styles} relative group flex items-center md:gap-4 gap-2.5 p-2.5 rounded-[22px] border border-neutral-800/60 text-neutral-700 transition-all duration-300 ease-in-out`}
+      className={`${props.styles} relative group flex items-center md:gap-4 gap-2.5 md:p-2.5 p-2 md:rounded-[22px] rounded-[17px] border border-neutral-800/60 text-neutral-700 transition-all duration-300 ease-in-out`}
     >
       <Image
-        className="md:size-11 size-8 rounded-[13px]"
+        className="md:size-11 size-10 md:rounded-[13px] rounded-[11.5px]"
         src={props.logo}
         alt={props.title}
       />

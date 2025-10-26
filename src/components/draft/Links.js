@@ -12,7 +12,7 @@ export function Links() {
   const headingRefs = [heading1Ref, heading2Ref, heading3Ref]
 
   return (
-    <section className="md:p-8 p-5 md:space-y-8 space-y-6 md:h-screen h-auto overflow-auto custom-scrollbar">
+    <section className="md:p-8 p-3 md:space-y-8 space-y-6 md:h-screen h-auto overflow-auto custom-scrollbar">
       {[
         { title: "Professions / Socials", data: linksData.profession },
         { title: "Live Sites", data: linksData.sites },
