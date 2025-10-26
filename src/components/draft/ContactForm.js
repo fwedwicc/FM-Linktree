@@ -5,22 +5,30 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTextAnimation } from "@/hooks"
 
 export function ContactForm() {
-  const { isModalOpen, closeModal, formData, updateFormData, resetForm } = useFormStore()
+  const {
+    isModalOpen,
+    closeModal,
+    formData,
+    updateFormData,
+    resetForm,
+    submitForm,
+    errors,
+    isSubmitting
+  } = useFormStore()
+
   const headingRef = useTextAnimation({
     delay: 0.2,
     stagger: 0.12,
     trigger: isModalOpen
   })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // temp
-    console.log('Form submitted:', formData)
-    resetForm()
+    await submitForm()
   }
 
   const handleClose = (e) => {
-    e.preventDefault()
+    if (e) e.preventDefault()
     resetForm()
     closeModal()
   }
@@ -79,42 +87,64 @@ export function ContactForm() {
                     <fieldset className='w-full space-y-1'>
                       <label htmlFor="name" className='text-sm'>Name</label>
                       <input
+                        id="name"
                         type="text"
                         placeholder="Your name"
                         value={formData.name}
                         onChange={(e) => updateFormData('name', e.target.value)}
-                        className="w-full input"
+                        className={`w-full input ${errors.name ? 'border-red-500/50 focus:border-red-500/50 focus:ring-red-500/10' : ''}`}
+                        disabled={isSubmitting}
                       />
+                      {errors.name && (
+                        <p className="text-red-400 text-[10px] pt-1.5">{errors.name}</p>
+                      )}
                     </fieldset>
                     {/* email */}
                     <fieldset className='w-full space-y-1'>
                       <label htmlFor="email" className='text-sm'>Email</label>
                       <input
+                        id="email"
                         type="text"
                         placeholder="Your email"
                         value={formData.email}
                         onChange={(e) => updateFormData('email', e.target.value)}
-                        className="w-full input"
+                        className={`w-full input ${errors.email ? 'border-red-500/50 focus:border-red-500/50 focus:ring-red-500/10' : ''}`}
+                        disabled={isSubmitting}
                       />
+                      {errors.email && (
+                        <p className="text-red-400 text-[10px] pt-1.5">{errors.email}</p>
+                      )}
                     </fieldset>
                     {/* message */}
                     <fieldset className='w-full space-y-1 col-span-full'>
                       <label htmlFor="message" className='text-sm'>Message</label>
                       <textarea
+                        id="message"
                         placeholder="Your message"
                         value={formData.message}
                         onChange={(e) => updateFormData('message', e.target.value)}
-                        className="w-full input resize-none"
+                        className={`w-full input resize-none ${errors.message ? 'border-red-500/50 focus:border-red-500/50 focus:ring-red-500/10' : ''}`}
                         rows="2"
+                        disabled={isSubmitting}
                       />
+                      {errors.message && (
+                        <p className="text-red-400 text-[10px] pt-1.5">{errors.message}</p>
+                      )}
                     </fieldset>
                   </div>
+
+                  {/* Submit error message */}
+                  {errors.submit && (
+                    <p className="text-red-400 text-xs text-center">{errors.submit}</p>
+                  )}
+
                   <div className="flex items-end justify-end gap-3 col-span-full">
                     <button
                       type="submit"
-                      className="flex items-center gap-3 bg-neutral-100 hover:bg-white text-neutral-900 rounded-[13px] font-semibold leading-none text-[11px] px-3.5 py-[12px] transition duration-300 ease-in-out"
+                      disabled={isSubmitting}
+                      className="flex items-center gap-3 bg-neutral-100 hover:bg-white text-neutral-900 rounded-[13px] font-semibold leading-none text-[11px] px-3.5 py-[12px] transition duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Send inquiry
+                      {isSubmitting ? 'Sending...' : 'Send inquiry'}
                     </button>
                   </div>
                 </div>

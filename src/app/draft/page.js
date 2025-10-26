@@ -1,9 +1,8 @@
 'use client'
 import './styles.css'
-import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Header, Hero, Footer, Links, ContactForm } from "@/components/draft"
-import { Loader } from "@/components/ui/draft"
+import { Toaster } from 'react-hot-toast'
 
 export default function Draft() {
 
@@ -17,6 +16,29 @@ export default function Draft() {
       {/* Hero Section */}
       <section className="lg:p-4 p-2 lg:pr-0 pr-2 lg:h-screen h-[70vh]">
         <div className='relative flex flex-col h-full justify-between bg-neutral-950/20 border border-neutral-800/50 rounded-[28px] p-10 overflow-hidden'>
+          <Toaster
+            position="top-center"
+            containerStyle={{
+              top: 20,
+            }}
+            toastOptions={{
+              success: {
+                duration: 3000,
+                style: {
+                  background: '#262626',
+                  color: '#fff',
+                  border: '1px solid #404040',
+                  borderRadius: '14px',
+                  padding: '12px 16px',
+                  fontSize: '13px',
+                },
+                iconTheme: {
+                  primary: '#22c55e',
+                  secondary: '#fff',
+                },
+              }
+            }}
+          />
           <ContactForm />
           <Header />
           <Hero />
