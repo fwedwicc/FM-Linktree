@@ -48,7 +48,7 @@ export function ContactForm() {
               damping: 26,
               stiffness: 300,
               bounce: 0.47,
-              duration: 0.4
+              duration: 0.5
             }}
             className="absolute top-0 left-0 right-0 z-50 p-2"
             onClick={(e) => e.stopPropagation()}
