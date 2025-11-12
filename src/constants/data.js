@@ -157,7 +157,7 @@ export const linksData = {
       link: 'https://www.codedex.io/@fwedwicc',
       logo: Codedex,
       title: "Codédex",
-      status: "Inactive",
+      status: "Active",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
     {
