@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, iConv, Vite, Instagram, Codedex, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
 
 export const linksData = {
   profession: [
@@ -48,7 +48,7 @@ export const linksData = {
       link: 'https://www.instagram.com/freefinnn',
       logo: Instagram,
       title: "Instagram",
-      status: "Inactive",
+      status: "Active",
       styles: "hover:bg-rose-500/10 hover:border-rose-500/30"
     },
     {
@@ -82,10 +82,17 @@ export const linksData = {
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
+      link: 'https://phased.undecide.dev',
+      logo: Phased,
+      title: "Phased",
+      status: "Finished",
+      styles: "hover:bg-red-700/10 hover:border-red-700/40"
+    },
+    {
       link: 'https://iconv.vercel.app/',
       logo: iConv,
       title: "iConv",
-      status: "Finished",
+      status: "In progress",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
@@ -157,6 +164,13 @@ export const linksData = {
       link: 'https://www.codedex.io/@fwedwicc',
       logo: Codedex,
       title: "Codédex",
+      status: "Active",
+      styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
+    },
+    {
+      link: 'https://monkeytype.com/profile/fwedwic',
+      logo: Monkeytype,
+      title: "Monkeytype",
       status: "Active",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
