@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest } from "@/assets"
 
 export const linksData = {
   profession: [
@@ -36,6 +36,13 @@ export const linksData = {
       title: "Dribbble",
       status: "Active",
       styles: "hover:bg-pink-500/10 hover:border-pink-500/30"
+    },
+    {
+      link: 'https://www.pinterest.com/fwedwicc/',
+      logo: Pinterest,
+      title: "Pinterest",
+      status: "Active",
+      styles: "hover:bg-red-700/10 hover:border-red-700/40"
     },
     {
       link: 'https://www.tiktok.com/@fwedwicc',

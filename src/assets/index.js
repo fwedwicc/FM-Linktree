@@ -5,6 +5,7 @@ import FMPortfolio from './fm-portfolio-logo.png'
 import LinkedIn from './linkedin-logo.png'
 import Upwork from './upwork-logo.png'
 import Dribbble from './dribbble-logo.png'
+import Pinterest from './pinterest-logo.png'
 import GitHub from './github-logo.png'
 import Behance from './behance-logo.png'
 import TechCommr from './tech-commr-logo.png'
@@ -38,6 +39,7 @@ export {
   LinkedIn,
   Upwork,
   Dribbble,
+  Pinterest,
   GitHub,
   Behance,
   TechCommr,

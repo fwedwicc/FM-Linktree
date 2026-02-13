@@ -36,7 +36,7 @@ module.exports = {
     // GitHub & Tech-Commr & FM DailyUI S1
     'hover:bg-green-500/10',
     'hover:border-green-500/30',
-    // Phased
+    // Phased & Pinterest
     'hover:bg-red-700/10',
     'hover:border-red-700/40',
     // fmUI & FM Gallery & Undecide
