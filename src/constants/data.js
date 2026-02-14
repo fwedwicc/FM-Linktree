@@ -9,13 +9,13 @@ export const linksData = {
       status: "Active",
       styles: "hover:bg-blue-500/10 hover:border-blue-500/30"
     },
-    {
-      link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
-      logo: Upwork,
-      title: "Upwork",
-      status: "Inactive",
-      styles: "hover:bg-green-500/10 hover:border-green-500/30"
-    },
+    // {
+    //   link: 'https://www.upwork.com/freelancers/~01da730f406ca1992c',
+    //   logo: Upwork,
+    //   title: "Upwork",
+    //   status: "Inactive",
+    //   styles: "hover:bg-green-500/10 hover:border-green-500/30"
+    // },
     {
       link: 'https://github.com/fwedwicc',
       logo: GitHub,
@@ -48,7 +48,7 @@ export const linksData = {
       link: 'https://www.tiktok.com/@fwedwicc',
       logo: TikTok,
       title: "TikTok",
-      status: "Inactive",
+      status: "Active",
       styles: "hover:bg-rose-500/10 hover:border-rose-500/30"
     },
     {
@@ -99,7 +99,7 @@ export const linksData = {
       link: 'https://iconv.vercel.app/',
       logo: iConv,
       title: "iConv",
-      status: "In progress",
+      status: "Discontinued",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
@@ -155,7 +155,7 @@ export const linksData = {
       link: 'https://profolios-fm.vercel.app/',
       logo: profolios,
       title: "profolios",
-      status: "In progress",
+      status: "Discontinued",
       styles: "hover:bg-stone-500/10 hover:border-stone-500/30"
     },
     {

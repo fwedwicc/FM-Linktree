@@ -8,8 +8,8 @@ export function Hero() {
   const headingRef = useTextAnimation()
 
   const bio = {
-    icon: '🤖',
-    text: 'Working from homeee'
+    icon: '🎨',
+    text: 'UI/UX Intern @ MMI'
   }
 
   const interest = ['frontend', 'ui/ux', 'visuals']
