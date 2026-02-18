@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest, YouTube } from "@/assets"
 
 export const linksData = {
   profession: [
@@ -50,6 +50,13 @@ export const linksData = {
       title: "TikTok",
       status: "Active",
       styles: "hover:bg-rose-500/10 hover:border-rose-500/30"
+    },
+    {
+      link: 'https://www.youtube.com/@fwedwicc',
+      logo: YouTube,
+      title: "YouTube",
+      status: "Active",
+      styles: "hover:bg-red-700/10 hover:border-red-700/40"
     },
     {
       link: 'https://www.instagram.com/freefinnn',

@@ -25,6 +25,7 @@ import Codepen from './codepen-logo.png'
 import FrontendMentor from './frontend-mentor-logo.png'
 import freeCodeCamp from './freecodecamp-logo.png'
 import TikTok from './tiktok-logo.png'
+import YouTube from './youtube-logo.png'
 import Facebook from './facebook-logo.png'
 import Instagram from './instagram-logo.png'
 import BuyMeACoffee from './buy-me-a-coffee-logo.png'
@@ -61,6 +62,7 @@ export {
   Facebook,
   Instagram,
   TikTok,
+  YouTube,
   BuyMeACoffee,
   Inosuke
 }
