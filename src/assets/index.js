@@ -28,6 +28,7 @@ import TikTok from './tiktok-logo.png'
 import YouTube from './youtube-logo.png'
 import Facebook from './facebook-logo.png'
 import Instagram from './instagram-logo.png'
+import X from './x-logo.png'
 import BuyMeACoffee from './buy-me-a-coffee-logo.png'
 import Inosuke from './inosuke.jpg'
 
@@ -61,6 +62,7 @@ export {
   freeCodeCamp,
   Facebook,
   Instagram,
+  X,
   TikTok,
   YouTube,
   BuyMeACoffee,

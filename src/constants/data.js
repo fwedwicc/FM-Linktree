@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest, YouTube } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, X, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest, YouTube } from "@/assets"
 
 export const linksData = {
   profession: [
@@ -59,7 +59,7 @@ export const linksData = {
       styles: "hover:bg-red-700/10 hover:border-red-700/40"
     },
     {
-      link: 'https://www.instagram.com/freefinnn',
+      link: 'https://www.instagram.com/fwedwicc',
       logo: Instagram,
       title: "Instagram",
       status: "Active",
@@ -72,6 +72,13 @@ export const linksData = {
       status: "Active",
       styles: "hover:bg-blue-700/10 hover:border-blue-700/30"
     },
+    {
+      link: 'https://x.com/fwedwicc',
+      logo: X,
+      title: "X",
+      status: "Active",
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
+    },
   ],
   sites: [
     {
@@ -80,13 +87,6 @@ export const linksData = {
       title: "FM Portfolio",
       status: "Finished",
       styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
-    },
-    {
-      link: 'https://tech-commr.vercel.app/',
-      logo: TechCommr,
-      title: "Tech-Commr",
-      status: "Finished",
-      styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
       link: 'https://undecide.dev/',
@@ -103,10 +103,17 @@ export const linksData = {
       styles: "hover:bg-red-700/10 hover:border-red-700/40"
     },
     {
-      link: 'https://iconv.vercel.app/',
-      logo: iConv,
-      title: "iConv",
-      status: "Discontinued",
+      link: 'https://tech-commr.vercel.app/',
+      logo: TechCommr,
+      title: "Tech-Commr",
+      status: "Finished",
+      styles: "hover:bg-green-500/10 hover:border-green-500/30"
+    },
+    {
+      link: 'https://fm-dump.vercel.app/',
+      logo: FMDark,
+      title: "fmDump",
+      status: "On going",
       styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
@@ -115,20 +122,6 @@ export const linksData = {
       title: "Rebyuwer",
       status: "Finished",
       styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
-    },
-    {
-      link: 'https://fwedwicc.github.io/fmUI/',
-      logo: FMNeutral,
-      title: "fmUI",
-      status: "In progress",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
-    },
-    {
-      link: 'https://fm-dump.vercel.app/',
-      logo: FMDark,
-      title: "fmDump",
-      status: "On going",
-      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://fwedwicc.github.io/FM-DailyUI/',
@@ -159,11 +152,11 @@ export const linksData = {
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
     {
-      link: 'https://profolios-fm.vercel.app/',
-      logo: profolios,
-      title: "profolios",
-      status: "Discontinued",
-      styles: "hover:bg-stone-500/10 hover:border-stone-500/30"
+      link: 'https://fwedwicc.github.io/fmUI/',
+      logo: FMNeutral,
+      title: "fmUI",
+      status: "In progress",
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
     },
     {
       link: 'https://pixelore.vercel.app/',
@@ -171,6 +164,20 @@ export const linksData = {
       title: "pixelore",
       status: "In progress",
       styles: "hover:bg-yellow-600/10 hover:border-yellow-600/30"
+    },
+    {
+      link: 'https://iconv.vercel.app/',
+      logo: iConv,
+      title: "iConv",
+      status: "Discontinued",
+      styles: "hover:bg-neutral-500/10 hover:border-neutral-500/30"
+    },
+    {
+      link: 'https://profolios-fm.vercel.app/',
+      logo: profolios,
+      title: "profolios",
+      status: "Discontinued",
+      styles: "hover:bg-stone-500/10 hover:border-stone-500/30"
     },
   ],
   courses: [
@@ -185,7 +192,7 @@ export const linksData = {
       link: 'https://monkeytype.com/profile/fwedwic',
       logo: Monkeytype,
       title: "Monkeytype",
-      status: "Active",
+      status: "Inactive",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
     },
     {

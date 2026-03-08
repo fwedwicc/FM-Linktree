@@ -39,7 +39,7 @@ module.exports = {
     // Phased & Pinterest & YouTube
     'hover:bg-red-700/10',
     'hover:border-red-700/40',
-    // fmUI & FM Gallery & Undecide
+    // fmUI & FM Gallery & Undecide & X
     'hover:bg-neutral-500/10',
     'hover:border-neutral-500/30',
     // quackOverflow, Codedex & freeCodeCamp
