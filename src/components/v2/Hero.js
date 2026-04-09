@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
 import { FMNotion } from "@/assets"
+import { Squircle } from "@/components/ui/v2"
 import { TbFlareFilled } from "react-icons/tb"
 import { useTextAnimation } from "@/hooks"
 
@@ -8,8 +9,8 @@ export function Hero() {
   const headingRef = useTextAnimation()
 
   const bio = {
-    icon: '🎨',
-    text: 'UI/UX Intern @ MMI'
+    icon: '💼',
+    text: 'Available for work'
   }
 
   const interest = ['frontend', 'ui/ux', 'visuals']
@@ -20,13 +21,25 @@ export function Hero() {
       <div className="flex">
         <div className='flex items-center md:gap-6 gap-4'>
           {/* Profile */}
-          <div className='relative md:size-[5.9rem] size-[5.3rem] md:rounded-3xl rounded-[20px] overflow-hidden'>
+          {/* <div className='relative md:size-[5.9rem] size-[5.3rem] md:rounded-3xl rounded-[20px] overflow-hidden'>
             <Image
               className="object-cover size-full"
               src={FMNotion}
               alt="Frederick Moreno"
             />
-          </div>
+          </div> */}
+          <Squircle
+            width={94}
+            height={94}
+            cornerRadius={28}
+            className='relative z-20 bg-white p-1 flex flex-col gap-1'
+          >
+            <Image
+              className="object-cover size-full"
+              src={FMNotion}
+              alt="Frederick Moreno"
+            />
+          </Squircle>
           {/* Content */}
           <div className='space-y-3'>
             <div className='space-y-1'>
