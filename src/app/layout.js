@@ -3,13 +3,13 @@ import Script from "next/script"
 
 export const metadata = {
   metadataBase: new URL('https://linktree.fwedwicc.com'),
-  title: "fwedwicc | Links",
+  title: "FM Linktree",
   description: "Links to all of Frederick Moreno's (fwedwicc) social media, projects, and web presence.",
   keywords: ["fwedwicc", "frederick moreno", "frontend developer", "ui ux designer", "links", "linktree"],
   authors: [{ name: "Frederick Moreno", url: "https://fwedwicc.com" }],
 
   openGraph: {
-    title: "fwedwicc | Links",
+    title: "FM Linktree",
     description: "Links to all of Frederick Moreno's (fwedwicc) social media, projects, and web presence.",
     url: "https://linktree.fwedwicc.com",
     siteName: "fwedwicc Linktree",
@@ -26,7 +26,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "fwedwicc | Links",
+    title: "FM Linktree",
     description: "Links to all of Frederick Moreno's (fwedwicc) social media, projects, and web presence.",
     // images: ["/preview.png"],
   },
