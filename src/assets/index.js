@@ -24,6 +24,7 @@ import Monkeytype from './monkeytype-logo.png'
 import Codepen from './codepen-logo.png'
 import FrontendMentor from './frontend-mentor-logo.png'
 import freeCodeCamp from './freecodecamp-logo.png'
+import CodersRank from './coders-rank-logo.png'
 import TikTok from './tiktok-logo.png'
 import YouTube from './youtube-logo.png'
 import Facebook from './facebook-logo.png'
@@ -60,6 +61,7 @@ export {
   Codepen,
   FrontendMentor,
   freeCodeCamp,
+  CodersRank,
   Facebook,
   Instagram,
   X,

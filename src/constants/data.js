@@ -1,4 +1,4 @@
-import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, X, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, TikTok, Pinterest, YouTube } from "@/assets"
+import { Behance, Dribbble, Facebook, FMNeutral, FMDark, FMGray, FMPortfolio, GitHub, Upwork, LinkedIn, profolios, pixelore, quackOverflow, TechCommr, Undecide, Phased, iConv, Vite, Instagram, X, Codedex, Monkeytype, Codepen, FrontendMentor, freeCodeCamp, CodersRank, TikTok, Pinterest, YouTube } from "@/assets"
 
 export const linksData = {
   profession: [
@@ -82,9 +82,16 @@ export const linksData = {
   ],
   sites: [
     {
+      link: 'https://fwedwicc.com',
+      logo: FMDark,
+      title: "FM Portfolio",
+      status: "Finished",
+      styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
+    },
+    {
       link: 'https://fwedwicc.github.io/FM-Portfolio/',
       logo: FMPortfolio,
-      title: "FM Portfolio",
+      title: "FM Portfolio (Old)",
       status: "Finished",
       styles: "hover:bg-indigo-700/10 hover:border-indigo-700/40"
     },
@@ -187,6 +194,13 @@ export const linksData = {
       title: "Codédex",
       status: "Active",
       styles: "hover:bg-yellow-300/10 hover:border-yellow-400/30"
+    },
+    {
+      link: 'https://profile.codersrank.io/user/fwedwicc/',
+      logo: CodersRank,
+      title: "CodersRank",
+      status: "Active",
+      styles: "hover:bg-blue-700/10 hover:border-blue-700/30"
     },
     {
       link: 'https://monkeytype.com/profile/fwedwic',
