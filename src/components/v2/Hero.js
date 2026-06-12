@@ -9,8 +9,8 @@ export function Hero() {
   const headingRef = useTextAnimation()
 
   const bio = {
-    icon: '💼',
-    text: 'Available for work'
+    icon: '👋🏻',
+    text: 'say hi — hello@fwedwicc.com'
   }
 
   const interest = ['frontend', 'ui/ux', 'visuals']
@@ -53,14 +53,22 @@ export function Hero() {
                 ))}
               </div>
             </div>
-            <div className='flex items-center gap-3 border border-neutral-800 rounded-[14px] p-[3px] pe-4'>
-              <div className='grid place-content-center size-7 text-xs rounded-[11px] border border-neutral-800'>
+            {/* <div className='flex items-center gap-3 border border-neutral-800 rounded-[14px] p-[3px] pe-4'>
+              <div className='grid place-content-center size-7 text-base rounded-[11px] border border-neutral-800'>
                 {bio.icon}
               </div>
               <p className='text-neutral-100'>
                 {bio.text}
               </p>
-            </div>
+            </div> */}
+            <a href="mailto:hello@fwedwicc.com" className='flex items-center gap-3 transition-all duration-300 ease-in-out hover:bg-neutral-800/40 border border-neutral-800 rounded-[14px] p-[3px] pe-4'>
+              <div className='grid place-content-center size-7 text-base rounded-[11px] border border-neutral-800'>
+                {bio.icon}
+              </div>
+              <p className='text-neutral-100'>
+                {bio.text}
+              </p>
+            </a>
           </div>
         </div>
       </div>

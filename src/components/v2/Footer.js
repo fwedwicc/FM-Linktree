@@ -10,9 +10,9 @@ export function Footer() {
   return (
     <footer className='flex justify-between items-end z-30 relative'>
       <p className='flex items-center md:gap-2 gap-1.5 text-neutral-400'>
-        fm
-        <TbFlareFilled className='size-2' />
         {currentYear}
+        <TbFlareFilled className='size-2' />
+        <a href='https://fwedwicc.com' target='_blank' rel='noopener noreferrer' className='hover:text-neutral-200 transition duration-300 ease-in-out'>fwedwicc.com</a>
       </p>
       <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='flex items-center gap-3 bg-neutral-800/50 hover:bg-neutral-800/70 border border-neutral-800 text-neutral-50 rounded-[13px] text-[11px] p-[4px] pe-4 transition duration-300 ease-in-out'>
         <div className='md:size-[31px] size-[28px] rounded-[9px] overflow-hidden'>

@@ -13,8 +13,8 @@ export default function Home() {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       {/* Hero Section */}
-      <section className="lg:p-4 p-2 lg:pr-0 pr-2 lg:h-screen h-[70vh]">
-        <div className='relative flex flex-col h-full justify-between bg-neutral-950/20 border border-neutral-800/50 rounded-[28px] md:p-10 p-5 overflow-hidden'>
+      <section className="p-2 lg:pr-0 pr-2 lg:h-screen h-[70vh]">
+        <div className='relative flex flex-col h-full justify-between bg-neutral-950/30 border border-neutral-800/50 rounded-[28px] md:p-10 p-5 overflow-hidden'>
           <Toaster position="top-center" containerStyle={{ top: 20, }}
             toastOptions={{
               success: {
