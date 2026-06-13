@@ -1,5 +1,6 @@
 import "./globals.css"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   metadataBase: new URL('https://linktree.fwedwicc.com'),
@@ -80,6 +81,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   )
