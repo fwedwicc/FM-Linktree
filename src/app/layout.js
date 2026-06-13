@@ -15,21 +15,21 @@ export const metadata = {
     url: "https://linktree.fwedwicc.com",
     siteName: "fwedwicc Linktree",
     type: "website",
-    // images: [
-    //   {
-    //     url: "/preview.png",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "fwedwicc Links",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "fwedwicc Links",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
     title: "FM Linktree",
     description: "Links to all of Frederick Moreno's (fwedwicc) social media, projects, and web presence.",
-    // images: ["/preview.png"],
+    images: ["/preview.png"],
   },
 
   alternates: {
