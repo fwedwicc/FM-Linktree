@@ -117,7 +117,7 @@ export const linksData = {
       styles: "hover:bg-green-500/10 hover:border-green-500/30"
     },
     {
-      link: 'https://fm-dump.vercel.app/',
+      link: 'https://dump.fwedwicc.com/',
       logo: FMDark,
       title: "fmDump",
       status: "On going",
